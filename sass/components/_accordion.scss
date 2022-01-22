@@ -62,7 +62,7 @@
   /* Unhides the content part when active. Sets the height */
 
 .accordion .container.active .content {
-    height: 40px;
+    height: 70px;
   }
   
   /* Changes from plus sign to negative sign once active */
@@ -93,6 +93,6 @@
           font-size: 14px;
       }
       .accordion .container.active .content {
-        height: 60px;
+        height: 110px;
       }
   }
