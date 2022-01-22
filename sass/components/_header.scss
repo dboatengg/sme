@@ -1,0 +1,18 @@
+@import '../varaibles/colors';
+.header {
+    background-color: $dark-blue;
+    color: $white;
+    padding: 8rem 0;
+    text-align: center;
+    height: auto;
+}
+.header__content {
+    display: flex;
+    max-width: 700px;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 4rem;
+}
+.header__title {
+    font-size: 4.2rem;
+}

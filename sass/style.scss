@@ -1,0 +1,38 @@
+@import './components/header';
+@import './varaibles/colors';
+@import './components/about';
+@import './components/accordion';
+@import './components/testimonial';
+@import './components/footer';
+/****css reset*****/
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: inherit;
+  }
+  
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  body {
+      box-sizing: border-box;
+      font-size: 1.8rem;
+      font-family: 'Inter', sans-serif;
+  }
+  a {
+      text-decoration: none;
+  }
+  .btn {
+    color: $white;
+    background-color: $button-color;
+    padding: 1.5rem 4rem;
+    border: none;
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: 0.3 ease-in-out;
+}
+.btn:hover {
+    filter: opacity(0.9);
+}
