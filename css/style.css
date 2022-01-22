@@ -167,6 +167,12 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .join {
+    padding: 2rem;
+  }
+  .accordion__title {
+    font-size: 3rem;
+  }
   .accordion .label {
     font-size: 1.6rem;
   }
