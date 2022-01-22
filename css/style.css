@@ -303,6 +303,13 @@
   .wrapper .box {
     width: 100%;
   }
+  .testimonial__title {
+    width: 80%;
+  }
+  .testimonial .wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .gallery {
