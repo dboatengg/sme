@@ -1,6 +1,6 @@
 .join {
     background-color: #14213D;
-    padding: 5rem;
+    padding: 5rem 5rem;
 }
 .accordion {
     max-width: 800px;
@@ -80,11 +80,11 @@
 
 
   @media only screen and (max-width: 800px){
-      .accordion {
-          width: 80%;
-      }
       .join {
-          padding: 4rem;
+          padding: 5rem 3rem;
+      }
+      .accordion {
+          padding: 4.5rem 2rem;
       }
       .accordion__title {
           font-size: 3rem;
