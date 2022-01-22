@@ -139,8 +139,8 @@
   font-size: 16px;
   text-align: justify;
   overflow: hidden;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
 /* Adds a horizontal line between the contents */
@@ -169,7 +169,7 @@
 
 @media only screen and (max-width: 800px) {
   .join {
-    padding: 2rem;
+    padding: 4rem;
   }
   .accordion__title {
     font-size: 3rem;
