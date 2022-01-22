@@ -11,7 +11,8 @@
     margin-bottom: 3rem;
 }
 .about__sub {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 8rem;
 }
@@ -19,4 +20,23 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
+}
+.about-img {
+    height: auto;
+    width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    .about {
+        padding: 5rem 2rem;
+    }
+    .about__sub {
+        grid-template-columns: 1fr;
+    }
+    .about-img {
+        order: 1;
+    }
+    .about__text {
+        order: 2;
+    }
 }
