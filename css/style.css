@@ -180,6 +180,9 @@
   .accordion .content {
     font-size: 14px;
   }
+  .accordion .container.active .content {
+    height: 60px;
+  }
 }
 
 /***colors***/
