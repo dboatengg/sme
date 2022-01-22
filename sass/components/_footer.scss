@@ -1,0 +1,13 @@
+@import '../varaibles/colors';
+.footer {
+    background-color: $footer-color;
+    color: $white;
+}
+.footer__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+@media only screen and (min-width: 800px) {
+    
+}
