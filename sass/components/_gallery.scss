@@ -1,5 +1,6 @@
 .gallery {
     background-color: #6F1DF4;
+    // height: 100vh;
 }
 .gallery__content {
     max-width: 1200px;
@@ -61,4 +62,12 @@
     grid-column-end: 9;
     grid-row-start: 6;
     grid-row-end: 9;
+}
+
+@media only screen and (max-width: 800px) {
+    .gallery__images {
+        max-width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
 }
