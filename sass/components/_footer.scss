@@ -60,6 +60,7 @@ small {
 }
 .email__link {
     color: #fff;
+    font-size-adjust: 1.8rem;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -70,12 +71,15 @@ small {
     .social {
         flex-direction: column;
     }
-}
-@media only screen and (max-width: 730px) {
     .social {
         flex-direction: column;
     }
     .social__icons {
         margin-top: 3rem;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .email__link {
+        font-size: 1.2rem;
     }
 }
