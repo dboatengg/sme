@@ -1,7 +1,5 @@
 @import '../varaibles/colors';
 .header {
-    // background-color: $dark-blue;
-    // background-color: $button-color;
     background-color: #116d85;
     background-image: url('/assets/elegant.png');
     background-repeat: no-repeat;
@@ -20,6 +18,9 @@
 }
 .header__title {
     font-size: 4.2rem;
+}
+.logo {
+    width: 200px;
 }
 @media only screen and (max-width: 320px){
     .header__title {
