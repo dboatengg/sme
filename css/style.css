@@ -1,6 +1,9 @@
 /***colors***/
 .header {
-  background-color: #14213D;
+  background-color: #116d85;
+  background-image: url("/assets/Elegant-Pattern-PNG-Transparent-Image.png");
+  background-repeat: no-repeat;
+  width: 100vw;
   color: #fff;
   padding: 8rem 0;
   text-align: center;
@@ -811,7 +814,7 @@ a {
 
 .btn {
   color: #fff;
-  background-color: #219EBC;
+  background-color: #14213D;
   padding: 1.5rem 4rem;
   border: none;
   border-radius: 5rem;

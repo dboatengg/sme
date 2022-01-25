@@ -1,6 +1,11 @@
 @import '../varaibles/colors';
 .header {
-    background-color: $dark-blue;
+    // background-color: $dark-blue;
+    // background-color: $button-color;
+    background-color: #116d85;
+    background-image: url('/assets/Elegant-Pattern-PNG-Transparent-Image.png');
+    background-repeat: no-repeat;
+    width: 100vw;
     color: $white;
     padding: 8rem 0;
     text-align: center;
