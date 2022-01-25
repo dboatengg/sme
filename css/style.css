@@ -436,7 +436,7 @@ small {
 }
 
 .google-map {
-  margin: 3rem auto;
+  margin: 3rem 0;
 }
 
 .mapouter {
@@ -488,6 +488,9 @@ small {
 }
 
 @media only screen and (max-width: 750px) {
+  .google-map {
+    margin: 4rem 0;
+  }
   .mapouter {
     position: relative;
     text-align: right;
@@ -671,7 +674,7 @@ small {
 }
 
 .google-map {
-  margin: 3rem auto;
+  margin: 3rem 0;
 }
 
 .mapouter {
@@ -723,6 +726,9 @@ small {
 }
 
 @media only screen and (max-width: 750px) {
+  .google-map {
+    margin: 4rem 0;
+  }
   .mapouter {
     position: relative;
     text-align: right;
