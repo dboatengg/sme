@@ -46,14 +46,11 @@
 .phone {
     align-items: flex-start;
 }
-.phone__right {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
+
 .phone__right a {
     color: #fff;
     display: block;
+    margin-bottom: 1rem;
 }
 small {
     font-size: 1.4rem;
@@ -80,6 +77,6 @@ small {
 }
 @media only screen and (max-width: 400px) {
     .email__link {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 }
