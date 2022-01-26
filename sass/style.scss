@@ -30,12 +30,13 @@
   }
   .btn {
     color: $white;
-    background-color: $dark-blue;
+    background-color: #002962;
     padding: 1.5rem 4rem;
     border: none;
     border-radius: 5rem;
     cursor: pointer;
     transition: 0.3 ease-in-out;
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.3);
 }
 .btn:hover {
     filter: opacity(0.9);
