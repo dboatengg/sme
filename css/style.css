@@ -75,6 +75,24 @@
   font-size: 4.5rem;
 }
 
+/******gallery page****/
+.gallery {
+  margin-top: 5rem;
+  background: none;
+}
+
+.gallery-header {
+  padding: 3rem 0;
+}
+
+.gallery-header .nav {
+  margin: 0 auto;
+}
+
+.gallery__title {
+  text-align: left;
+}
+
 @media only screen and (max-width: 320px) {
   .header__heading {
     font-size: 3rem;
