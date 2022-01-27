@@ -41,3 +41,21 @@
 .btn:hover {
     filter: opacity(0.9);
 }
+
+
+.back-to-top {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  border: none;
+  color: $white;
+  background-color: #f7b801;
+  padding: 2rem;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 2rem;
+}
+.hidden {
+  display: none;
+}

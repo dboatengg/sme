@@ -2,14 +2,13 @@ const accordion = document.getElementsByClassName('container');
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navLink = document.querySelectorAll(".nav-menu__link");
+const backToTopButton = document.querySelector(".back-to-top");
 
 for (i=0; i<accordion.length; i++) {
   accordion[i].addEventListener('click', function () {
     this.classList.toggle('active')
   })
 }
-
-
 
 /****nav bar*****/
 hamburger.addEventListener("click", mobileMenu);
@@ -37,3 +36,30 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+/*******Back to top******/
+const showOnPx = 200;
+
+const scrollContainer = () => {
+  return document.documentElement || document.body;
+};
+
+document.addEventListener("scroll", () => {
+  if (scrollContainer().scrollTop > showOnPx) {
+    backToTopButton.classList.remove("hidden")
+  } else {
+    backToTopButton.classList.add("hidden")
+  }
+});
+
+
+/*****scroll to top when user clicks on scroll-to-top*****/
+const goToTop = () => {
+  document.body.scrollIntoView({
+    behavior: 'smooth'
+  });
+};
+
+/****invoke function whenever scroll-to-top button is clicked****/
+backToTopButton.addEventListener("click", goToTop)
+

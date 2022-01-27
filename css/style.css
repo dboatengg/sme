@@ -1004,4 +1004,23 @@ a {
   -webkit-filter: opacity(0.9);
           filter: opacity(0.9);
 }
+
+.back-to-top {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  border: none;
+  color: #fff;
+  background-color: #f7b801;
+  padding: 2rem;
+  -webkit-box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 2rem;
+}
+
+.hidden {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
