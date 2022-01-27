@@ -4,7 +4,7 @@
   background-image: url("/assets/elegant.png");
   background-repeat: no-repeat;
   color: #fff;
-  padding: 2rem 0 8rem 0;
+  padding: 4rem 0 8rem 0;
   text-align: center;
   height: auto;
 }
@@ -37,6 +37,7 @@
 
 .hamburger {
   display: none;
+  padding: 2rem;
 }
 
 .bar {
@@ -87,6 +88,10 @@
   .logo {
     width: 65px;
   }
+  .nav-menu {
+    top: 9rem;
+    padding: 4rem 0;
+  }
 }
 
 @media only screen and (max-width: 760px) {
@@ -98,7 +103,10 @@
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 900px) {
+  .header {
+    padding: 2rem 0 8rem 0;
+  }
   .nav {
     width: 90%;
   }
@@ -112,7 +120,7 @@
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 9rem;
+    top: 11rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -123,7 +131,7 @@
     text-align: center;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    padding: 3rem 0;
+    padding: 5rem 0;
     -webkit-box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
             box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
@@ -161,6 +169,12 @@
   }
   body.lock-scroll {
     overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  .nav {
+    width: 90%;
   }
 }
 
