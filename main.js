@@ -38,7 +38,7 @@ function closeMenu() {
 }
 
 /*******Back to top******/
-const showOnPx = 200;
+const showOnPx = 100;
 
 const scrollContainer = () => {
   return document.documentElement || document.body;
