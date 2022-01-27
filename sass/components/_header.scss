@@ -72,6 +72,9 @@
     .header__heading {
         font-size: 3rem;
     }
+    .logo {
+        width: 50px;
+    }
 }
 
 @media only screen and (max-width: 520px){
@@ -84,6 +87,12 @@
     .nav-menu {
         top: 9rem;
         padding: 4rem 0;
+    }
+    .header__subtitle {
+        font-size: 3.3rem;
+    }
+    .header__heading {
+        font-size: 2.4rem;
     }
 }
 @media only screen and (max-width: 760px){

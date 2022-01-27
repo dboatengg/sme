@@ -8,11 +8,7 @@
     margin: 0 auto;
     padding: 4rem 0;
 }
-// .social {
-//     display: flex;
-//     justify-content: space-between;
-//     margin-top: 4rem;
-// }
+
 .social__icons {
     display: flex;
     flex-direction: row;
@@ -54,10 +50,9 @@
     display: block;
     margin-bottom: 1rem;
 }
-small {
+small p{
     font-size: 1.5rem;
     text-align: center;
-    width: 100%;
     color: #999;
 }
 .email {
@@ -104,7 +99,7 @@ small {
 }
 @media only screen and (max-width: 400px) {
     .email__link {
-        font-size: 1.3rem;
+        font-size: 1.6rem;
     }
     
 }
@@ -165,6 +160,13 @@ small {
     #gmap_canvas {
         width: 230px; 
         height: 500px
+    }
+    
+}
+
+@media only screen and (max-width: 310px){
+    .email__link {
+        font-size: 1rem;
     }
     
 }
