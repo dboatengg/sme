@@ -34,8 +34,21 @@
 </head>
 <body>
     <header class="header">
-        <a href="index.html"><img class="logo" src="assets/loogoo.svg" alt=""></a>
-        <div class="header__content">
+      <nav class="nav">
+          <a href="index.html"><img class="logo" src="assets/loogoo.svg" alt=""></a>
+          <ul class="nav-menu">
+            <li class="nav-menu__list"><a class="nav-menu__link" href="index.html">Home</a></li>
+            <li class="nav-menu__list"><a class="nav-menu__link" href="#">About</a></li>
+            <li class="nav-menu__list"><a class="nav-menu__link" href="#">Courses</a></li>
+            <li class="nav-menu__list"><a class="nav-menu__link" href="#">Gallery</a></li>
+          </ul>
+          <div class="hamburger">
+            <span onclick="lockScroll();" class="bar"></span>
+            <span onclick="lockScroll();" class="bar"></span>
+            <span onclick="lockScroll();" class="bar"></span>
+        </div>
+        </nav>
+        <div class="hero__content">
             <h1><span class="header__heading">WELCOME TO</span><br><span class="header__subtitle">SPONSOR MY EDUCATION</span></h1>
             <p class="header__text">Sponsor My Education is a Professional and Managerial training of excellence based in Accra, Ghana with its Examining Bodies based in Ghana, the UK and Canada.</p>
             <a href="#"><button class="btn">Register here</button></a>
