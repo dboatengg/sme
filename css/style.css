@@ -511,16 +511,6 @@
   padding: 4rem 0;
 }
 
-.social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 4rem;
-}
-
 .social__icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -530,6 +520,7 @@
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 3rem;
+  margin: 3rem 0;
 }
 
 .social i {
@@ -572,6 +563,7 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin: 2rem 0;
 }
 
 .phone__right a {
@@ -581,7 +573,13 @@
 }
 
 small {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.email {
+  margin-bottom: 4rem;
 }
 
 .email__link {
@@ -756,16 +754,6 @@ small {
   padding: 4rem 0;
 }
 
-.social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 4rem;
-}
-
 .social__icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -775,6 +763,7 @@ small {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 3rem;
+  margin: 3rem 0;
 }
 
 .social i {
@@ -817,6 +806,7 @@ small {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin: 2rem 0;
 }
 
 .phone__right a {
@@ -826,7 +816,13 @@ small {
 }
 
 small {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.email {
+  margin-bottom: 4rem;
 }
 
 .email__link {

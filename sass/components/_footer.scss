@@ -8,15 +8,16 @@
     margin: 0 auto;
     padding: 4rem 0;
 }
-.social {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 4rem;
-}
+// .social {
+//     display: flex;
+//     justify-content: space-between;
+//     margin-top: 4rem;
+// }
 .social__icons {
     display: flex;
     flex-direction: row;
     gap: 3rem;
+    margin: 3rem 0;
 }
 .social i {
     font-size: 2.8rem;
@@ -45,6 +46,7 @@
 }
 .phone {
     align-items: flex-start;
+    margin: 2rem 0;
 }
 
 .phone__right a {
@@ -53,7 +55,12 @@
     margin-bottom: 1rem;
 }
 small {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+}
+.email {
+    margin-bottom: 4rem;
 }
 .email__link {
     color: #fff;
