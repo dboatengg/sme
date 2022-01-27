@@ -19,6 +19,7 @@
   html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
   }
   body {
       box-sizing: border-box;
@@ -61,3 +62,4 @@
 .hidden {
   display: none;
 }
+
