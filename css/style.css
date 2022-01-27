@@ -4,7 +4,7 @@
   background-image: url("/assets/elegant.png");
   background-repeat: no-repeat;
   color: #fff;
-  padding: 4rem 0 8rem 0;
+  padding: 2rem 0 8rem 0;
   text-align: center;
   height: auto;
 }
@@ -20,7 +20,7 @@
       -ms-flex-align: center;
           align-items: center;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 5rem auto;
 }
 
 .nav-menu__list {
@@ -67,7 +67,7 @@
 }
 
 .logo {
-  max-width: 150px;
+  width: 100px;
 }
 
 .header__subtitle {
@@ -105,6 +105,9 @@
   .nav {
     width: 90%;
   }
+  .logo {
+    width: 60px;
+  }
   .hamburger {
     display: block;
     cursor: pointer;
@@ -112,7 +115,7 @@
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 15rem;
+    top: 9rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
