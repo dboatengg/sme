@@ -598,6 +598,7 @@ small p {
 
 .google-map {
   margin: 3rem 0;
+  z-index: 888;
 }
 
 .mapouter {
@@ -847,6 +848,7 @@ small p {
 
 .google-map {
   margin: 3rem 0;
+  z-index: 888;
 }
 
 .mapouter {
@@ -1019,6 +1021,7 @@ a {
   cursor: pointer;
   border-radius: 5px;
   font-size: 2rem;
+  z-index: 999;
 }
 
 .hidden {
