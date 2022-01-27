@@ -57,19 +57,21 @@
         font-size: 3rem;
     }
 }
-// @media only screen and (max-width: 520px){
-//     .logo {
-//         width: 150px;
-//     }
-// }
+
 @media only screen and (max-width: 520px){
     .hero__content {
         width: 90%;
+    }
+    .logo {
+        width: 65px;
     }
 }
 @media only screen and (max-width: 760px){
     .header {
         background-position: 30% 100%;
+    }
+    .logo {
+        width: 75px;
     }
 
 }
@@ -79,7 +81,7 @@
         width: 90%;
     }
     .logo {
-        width: 60px;
+        width: 85px;
     }
     .hamburger {
         display: block;

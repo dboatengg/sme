@@ -84,11 +84,17 @@
   .hero__content {
     width: 90%;
   }
+  .logo {
+    width: 65px;
+  }
 }
 
 @media only screen and (max-width: 760px) {
   .header {
     background-position: 30% 100%;
+  }
+  .logo {
+    width: 75px;
   }
 }
 
@@ -97,7 +103,7 @@
     width: 90%;
   }
   .logo {
-    width: 60px;
+    width: 85px;
   }
   .hamburger {
     display: block;
