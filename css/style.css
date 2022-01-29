@@ -719,6 +719,7 @@ small p {
   color: white;
   background-color: #6F1DF4;
   background-image: url("/assets/elegant.png");
+  margin-top: 0;
 }
 
 .gallery__content {
