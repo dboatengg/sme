@@ -1,0 +1,10 @@
+@mixin flex-sb-ac {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin grid--1x2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
