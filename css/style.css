@@ -1005,8 +1005,8 @@ input {
   border-radius: 0.22rem;
 }
 
-select, input {
-  background-color: #E8F0FE;
+select, input, textarea {
+  background-color: #f8faff;
   -webkit-transition: background-color 0.4s ease-in-out;
   transition: background-color 0.4s ease-in-out;
 }
@@ -1332,8 +1332,9 @@ input[type="radio"], input[type="checkbox"] {
 
 .submit-form {
   margin: 3rem;
-  background-color: #666;
+  background-color: black;
   color: #fff;
+  border: 0;
 }
 
 .live label {

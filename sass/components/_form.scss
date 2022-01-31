@@ -9,7 +9,7 @@
 
   #form {max-width: 1200px;margin: 0 auto;}
   input {border: none;height: 3.5rem;width: 30rem;padding-left: 1rem;border-radius: 0.22rem;}
-  select, input {background-color: #E8F0FE;transition: background-color 0.4s ease-in-out;}
+  select, input,textarea {background-color: #f8faff;transition: background-color 0.4s ease-in-out;}
   
   input:focus {outline: 0;background-color: $white;}
   select {height: 3rem;border-radius: .5rem;padding: 0 1rem;display: block;}
@@ -117,6 +117,6 @@
 .parent legend {margin-bottom: 3rem;}
 
 
-.submit-form {margin:3rem;background-color: #666;color: $white;}
+.submit-form {margin:3rem;background-color: black;color: $white;border: 0;}
 .live label {display: inline;}
 .live div, .dismissed div, .disability div, .past-tertiary, .past-high {display: flex;align-items: center;flex-direction: row;gap: 1rem;}
