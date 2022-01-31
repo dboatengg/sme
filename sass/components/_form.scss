@@ -1,0 +1,110 @@
+//general
+#application-form {
+    background-color: #c4c4c4;
+    .application-header {text-align: center;max-width: 1200px;margin: 0 auto;padding: 2rem;
+      .title {font-size: 2.7rem;}}
+    .answer {width: 60%;margin: 1rem auto 0 auto;}
+    .badge {background-color: #666;color: $white;width: 50%;margin: 0 auto;padding: 1rem;margin: 1rem auto 0 auto;font-weight: 600;}
+  }
+  
+  #form {max-width: 1200px;margin: 0 auto;}
+  input {border: none;height: 3.5rem;width: 30rem;padding-left: 1rem;border-radius: 0.22rem;}
+  select, input {background-color: #E8F0FE;transition: background-color 0.4s ease-in-out;}
+  
+  input:focus {outline: 0;background-color: $white;}
+  select {height: 3rem;border-radius: .5rem;padding: 0 1rem;display: block;}
+  select:focus {outline: 0;}
+  fieldset {border: none;}
+  label {font-weight: 600;}
+  hr {margin: 2rem 0;height: 10px;border-radius: 5px;max-width: 1200px;width: 80%;}
+  label, input {display: block;}
+  .personal-information, .program, .level, .education {padding: 3rem;}
+  
+  /*personal information*/
+  .fullName, .gdn, .emc {display: grid;grid-template-columns: repeat(auto-fill, 350px);grid-gap: 1.5rem;}
+  .gdn, .emc, .location, .fullName{margin-top: 1.5rem;}
+  .personal-information__legend {margin-bottom: 3rem;}
+  .personal-information__title {font-size: 2.7rem;font-weight: 700;}
+  .email {margin: 0;}
+  .note {font-style: italic;font-weight: 500;text-decoration: underline;}
+  
+  @media only screen and (max-width: 768px){
+    #application-form {
+      .answer, .badge {width: 80%;}
+    }
+  }
+
+  @media only screen and (max-width: 435px){
+    #application-form {
+      .answer, .badge {width: 90%;}
+      .application-header{
+        .logo {width: 6rem;}
+        .title {font-size: 2.2rem;}
+        .answer {font-size: 1.6rem;}
+        .badge {font-size: 1.4rem;}
+        .fields {font-size: 1.3rem;}
+  
+      }
+  
+    }
+    .personal-information, .program, .level, .education {padding: 2rem;}
+    .personal-information__title {font-size: 2rem;}
+    .note {font-size: 1.4rem;}
+    input {border: none;height: 3.2rem;width: 25rem;}
+    .firstName div {float: left;}
+    .location {margin-top: 0;}
+  
+  }
+  
+  
+  
+  
+  /*program of choice*/
+  .program {gap: 3rem;}
+  .program input, .program label {display: inline;}
+  .program__legend {text-align: left;}
+  .program__title {font-size: 2.7rem;font-weight: 700;}
+  .fchoice, .schoice, .tchoice {margin: 3rem 0;}
+  .fchoice__small, .schoice__small, .tchoice__small {font-size: 1.3rem;font-style: italic;}
+
+  @media only screen and (max-width: 410px){
+    .program select {width: 200px}
+  }
+  
+  /*Level*/ 
+  .level input, .level label {display: inline;}
+  input[type="radio"], input[type="checkbox"] {height: 30px;width: 20px;}
+  .diploma, .hnd, .degree {margin-bottom: 3rem;display: flex;gap: 4rem;}
+  .diploma div, .hnd div, .degree div {display: flex;align-items: center;gap: 0.5rem;}
+  .diploma div:first-child, .hnd div:first-child, .degree div:first-child {margin-right: 5rem;}
+  .hnd h2, .diploma h2{width: 85.954px;}
+  .regular, .weekend, .online {display: flex;gap: 4rem;font-weight: 400;font-style: italic;align-items: baseline;}
+  .diploma {margin-top: 3rem;}
+  .diploma h2, .hnd h2, .degree h2{font-size: 2rem;}
+
+  @media only screen and (max-width: 475px) {
+    .diploma div:first-child, .hnd div:first-child, .degree div:first-child {margin-right: 2rem;}
+    .diploma div, .hnd div, .degree div {font-size: 1.5rem;gap: 0;flex-direction: column;display: block;}
+  }
+  
+  
+  
+  /**course***/ 
+  .course__content {margin: 2rem 0;}
+  .course__content label {font-size: 2rem;}
+  .course__level {display: flex;align-items: flex-start;}
+  .course__title {font-size: 2.3rem;font-weight: bold;}
+  .course__legend .note {margin-bottom: 1rem;}
+  
+  /***educational histroy***/
+  .education__title {font-size: 2.7rem;font-weight: 700;}
+  .education__legend p {text-decoration: underline;font-style: italic;}
+  .education__text {width: 60%;margin: 0 auto;}
+  .fhigh {display: flex;gap: 3rem;margin-bottom: 2rem;}
+  .education__secondary {font-size: 2rem;margin: 3rem 0;}
+  .sregion, .tname {margin-bottom: 2rem;}
+  .tname input {width: 50rem;}
+  
+  
+  /****parent or guardian***/ 
+.pr {display: flex;justify-content: space-between;align-items: center;margin-top: 2rem;}

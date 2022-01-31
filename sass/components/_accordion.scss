@@ -1,109 +1,35 @@
-.join {
-    background-color: $dark-blue;
-    padding: 5rem 5rem;
-}
-.accordion {
-    max-width: 800px;
-    border-radius: 2rem;
-    margin: 0 auto;
-    color: black;
-    background-color: #ffffff;
-    padding: 45px 45px;
-    box-shadow: 1px 2px 12px rgba(0,0,0,0.2);
-    background-color: #e9e9e9;
-  }
+.join {background-color: $dark-blue;padding: 5rem 5rem;}
+.accordion {max-width: 800px;border-radius: 2rem;margin: 0 auto;color: black;background-color: #ffffff;padding: 45px 45px;box-shadow: 1px 2px 12px rgba(0,0,0,0.2);background-color: #e9e9e9;}
 
-  .accordion .container {
-    position: relative;
-    margin: 10px 10px;
-  }
-  .accordion .label {
-    position: relative;
-    padding: 7px 0;
-    font-size: 2rem;
-    color: black;
-    cursor: pointer;
-    font-weight: 600;
-  }
+.accordion .container {position: relative;margin: 10px 10px;}
+.accordion .label {position: relative;padding: 7px 0;font-size: 2rem;color: black;cursor: pointer;font-weight: 600;}
 
-  /* Positions the plus sign 5px from the right. Centers it using the transform property. */
-
-.accordion .label::before {
-    content: '+';
-    color: #6F1DF4;
-    position: absolute;
-    top: 50%;
-    right: -5px;
-    font-size: 30px;
-    transform: translateY(-50%);
-  }
+/* Positions the plus sign 5px from the right. Centers it using the transform property. */
+.accordion .label::before {content: '+';color: #6F1DF4;position: absolute;top: 50%;right: -5px;font-size: 30px;transform: translateY(-50%);}
   
-  /* Hides the content (height: 0), decreases font size, justifies text and adds transition */
+/* Hides the content (height: 0), decreases font size, justifies text and adds transition */
+.accordion .content {position: relative;background-color: #e9e9e9;;height: 0;margin-left: 5px;font-size: 16px;text-align: justify;overflow: hidden;transition: 0.25s;}
   
-  .accordion .content {
-    position: relative;
-    background-color: #e9e9e9;;
-    height: 0;
-    margin-left: 5px;
-    font-size: 16px;
-    text-align: justify;
-    overflow: hidden;
-    transition: 0.25s;
-  }
-  
-  /* Adds a horizontal line between the contents */
-  
-  .accordion hr {
-    width: 100%;
-    margin-left: 0;
-    border: 1px solid white;
-  }
+/* Adds a horizontal line between the contents */
+  .accordion hr {width: 100%;margin-left: 0;border: 2px solid white;}
 
   /* Unhides the content part when active. Sets the height */
-
-.accordion .container.active .content {
-    height: 70px;
-  }
+.accordion .container.active .content {height: 70px;}
   
-  /* Changes from plus sign to negative sign once active */
-  
-  .accordion .container.active .label::before {
-    content: '-';
-    font-size: 30px;
-  }
-
-  .accordion__title {
-      text-align: center;
-      font-size: 4rem;
-      margin-bottom: 3rem;
-  }
+/* Changes from plus sign to negative sign once active */
+  .accordion .container.active .label::before {content: '-';font-size: 30px;}
+  .accordion__title {text-align: center;font-size: 4rem;margin-bottom: 3rem;}
 
 
-  @media only screen and (max-width: 800px){
-      .join {
-          padding: 5rem 3rem;
-      }
-      .accordion {
-          padding: 4.5rem 2rem;
-      }
-      .accordion__title {
-          font-size: 3rem;
-      }
-      .accordion .label {
-          font-size: 1.6rem;
-      }
-      .accordion .content {
-          font-size: 14px;
-          text-align: left;
-      }
-      .accordion .container.active .content {
-        height: 150px;
+@media only screen and (max-width: 800px){
+  .join {padding: 5rem 3rem;}
+  .accordion {padding: 4.5rem 2rem;}
+  .accordion__title {font-size: 3rem;}
+  .accordion .label {font-size: 1.6rem;}
+  .accordion .content {font-size: 14px;text-align: left;}
+  .accordion .container.active .content {height: 150px;}
+}
 
-      }
-  }
-  @media only screen and (max-width: 300px){
-      .accordion .content {
-          font-size: 12px;
-          text-align: left;
-      }
-  }
+@media only screen and (max-width: 300px){
+  .accordion .content {font-size: 12px;text-align: left;}
+}
