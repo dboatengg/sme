@@ -275,7 +275,7 @@
 
 .accordion {
   max-width: 800px;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   margin: 0 auto;
   color: black;
   background-color: #ffffff;
@@ -328,7 +328,9 @@
 .accordion hr {
   width: 100%;
   margin-left: 0;
-  border: 2px solid white;
+  border: none;
+  height: 2px;
+  background-color: white;
 }
 
 /* Unhides the content part when active. Sets the height */
