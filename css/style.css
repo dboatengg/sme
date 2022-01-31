@@ -963,7 +963,7 @@ small p {
 }
 
 #application-form {
-  background-color: #c4c4c4;
+  background-color: #c1c1c1;
 }
 
 #application-form .application-header {
@@ -1023,8 +1023,12 @@ select {
   display: block;
 }
 
-select:focus {
+select:focus, textarea:focus {
   outline: 0;
+}
+
+textarea {
+  padding: 2rem;
 }
 
 fieldset {
@@ -1047,8 +1051,12 @@ label, input {
   display: block;
 }
 
-.personal-information, .program, .level, .education {
+.personal-information, .program, .level, .education, .parent, .sponsor, .extra, .live {
   padding: 3rem;
+}
+
+input[type="checkbox"] {
+  display: inline;
 }
 
 /*personal information*/
@@ -1163,7 +1171,7 @@ label, input {
   }
 }
 
-/*Level*/
+/*Level of education*/
 .level input, .level label {
   display: inline;
 }
@@ -1234,7 +1242,7 @@ input[type="radio"], input[type="checkbox"] {
   }
 }
 
-/**course***/
+/**choose a course***/
 .course__content {
   margin: 2rem 0;
 }
@@ -1275,6 +1283,7 @@ input[type="radio"], input[type="checkbox"] {
 .education__text {
   width: 60%;
   margin: 0 auto;
+  text-align: left;
 }
 
 .fhigh {
@@ -1299,17 +1308,50 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 /****parent or guardian***/
-.pr {
+.ep, .ld, .pr {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (350px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 350px);
+  grid-gap: 1.5rem;
+}
+
+.co input, #sponsorName input, .nameOfInstitution input {
+  width: 50rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .co input, #sponsorName input, .nameOfInstitution input {
+    width: 30rem;
+  }
+}
+
+.parent legend {
+  margin-bottom: 3rem;
+}
+
+.submit-form {
+  margin: 3rem;
+  background-color: #666;
+  color: #fff;
+}
+
+.live label {
+  display: inline;
+}
+
+.live div, .dismissed div, .disability div, .past-tertiary, .past-high {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 2rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1rem;
 }
 
 /****css reset*****/

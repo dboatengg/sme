@@ -32,7 +32,7 @@
     </header>
     <hr>
     <main id="form-container">
-        <form action="#" id="form">
+        <form action="#" id="form" class="form">
             <fieldset class="personal-information">
               <div class="personal-information__legend">
                   <legend class="personal-information__title">PERSONAL INFORMATION</legend>
@@ -352,12 +352,12 @@
             </div>
             </fieldset>
             <hr>
-
             <!-- program of choice  -->
             <fieldset class="program">
                 <div class="program__legend">
                     <legend class="program__title">PROGRAM OF CHOICE</legend>
                     <p class="note">This field is compulsory from 1st, 2nd and 3rd choice. All spaces must be completed. </p>
+                    <p>Note: <b>Do not select a program more than once</b></p>
                 </div>
                 <div class="fchoice" >
                     <label for="fchoiceTitle">1st Programme of Choice</label>
@@ -430,7 +430,6 @@
                 </div>
             </fieldset>
             <hr>
-
             <!-- level of course  -->
             <fieldset class="level">
                 <div class="level__legend">
@@ -476,7 +475,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- course schedule  -->
                 <div class="course__level">
                     <div class="course__content">
@@ -499,7 +497,6 @@
                     </div>
                 </div>
             </fieldset>
-
             <hr>
             <!-- Secondary School history  -->
             <fieldset class="education">
@@ -511,7 +508,7 @@
                 <h1 class="education__secondary">SECONDARY/ HIGH SCHOOL ATTENDED</h1>
                 <div class="fhigh">
                     <label for="vehicle3">Have you ever been Secondary/High School?: </label><br>
-                    <div class="">
+                    <div class="past-high">
                         <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">Yes
                         <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">No
                     </div>
@@ -553,13 +550,12 @@
                 </div>
             </fieldset>
             <hr>
-
             <!-- Tertiary Education history  -->
             <fieldset class="education">
-                <h1 class="education__secondary">PAST TERTIARY INSTITUTION ATTENDED</h1>
+                <h1 class="education__secondary education__tertiary">PAST TERTIARY INSTITUTION ATTENDED</h1>
                 <div class="fhigh">
                     <label for="vehicle3">Have you ever attended any tertiary institution? </label><br>
-                    <div class="">
+                    <div class="past-tertiary">
                         <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">Yes
                         <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">No
                     </div>
@@ -581,14 +577,11 @@
                     <input type="text">
                 </div>
             </fieldset>
-
             <hr>
             <!-- parent or guardian  -->
-            <fieldset>
+            <fieldset class="parent">
                 <div class="education__legend">
                     <legend class="education__title">PARENT/GUARDIAN/SPONSOR DETAILS</legend>
-                    <p class="education__text">Please submit copies of your official transcript or report cards and result slips </p>
-                    <p class="education__text">(other language documents translated in English)</p>
                 </div>
                 <div class="pr">
                     <div id="parentName">
@@ -601,12 +594,11 @@
                     </div>
                 </div>
                 <br>
-                <div class="em">
+                <div class="ep">
                     <div id="email">
                         <label for="email">Email ID:</label>
                         <input type="text">
                     </div>
-                    <br>
                     <div id="phone">
                         <label for="phone">Phone Number: </label>
                         <input type="text">
@@ -617,8 +609,92 @@
                     <label for="occupation">Current Occupation: </label>
                     <input type="text">
                 </div>
+                <div class="ld">
+                    <div class="location">
+                        <label for="location">Location: </label>
+                        <input type="text">
+                    </div>
+                    <div class="address">
+                        <label for="location">Digital Address: </label>
+                        <input type="text">
+                    </div>
+                </div>
             </fieldset>
-
+            <hr>
+            <!-- parent or guardian  -->
+            <fieldset class="sponsor">
+                <div class="pr">
+                    <div id="sponsorName">
+                        <label for="sponsorName">Name of Sponsor <span>(if not parent/guardian)</span></label>
+                        <input type="text">
+                    </div>
+                </div>
+                <br>
+                <div class="ep">
+                    <div id="relationship">
+                        <label for="relationship">Contact Person Name:</label>
+                        <input type="text">
+                    </div>
+                    <div id="email">
+                        <label for="email">Position/Relationship:</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <br>
+                <div class="ld">
+                    <div id="phone">
+                        <label for="phone">Email: </label>
+                        <input type="text">
+                    </div>
+                    <div class="location">
+                        <label for="location">Phone Number: </label>
+                        <input type="text">
+                    </div>
+                </div>
+            </fieldset>
+            <hr>
+            <fieldset class="extra">
+                <div class="disability">
+                    <label for="disabilityName">Do you have a disability or a learning difficulty that may affect your 
+                        learning while at SPONSOR MY EDUCATION
+                    </label>
+                    <div>
+                        <input type="checkbox" name="yes" id="yes">Yes
+                        <input type="checkbox" name="no" id="no">No
+                    </div>
+                    <br>
+                    <label for="msg">If yes, please provide a brief detail:</label>
+                    <textarea name="msg" id="msg" cols="60" rows="10"></textarea>
+                </div>
+                <div class="dismissed">
+                    <label for="disabilityName">Have you ever been dismissed from an institution before:
+                    <div class="">
+                        <input type="checkbox" name="yes" id="yes">Yes
+                        <input type="checkbox" name="no" id="no">No
+                    </div>
+                    <br>
+                    <label for="msg">If yes,</label>                    
+                    <div class="nameOfInstitution">
+                        <label for="noi">Name of Institution:</label>
+                        <input type="text" name="" id="">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="live">
+                <div class="">
+                    <input type="checkbox" name="myself" id="">
+                    <label for="myself">I LIVE BY MYSELF</label>
+                </div>
+                <div class="parents">
+                    <input type="checkbox" name="myself" id="">
+                    <label for="myself">I LIVE WITH PARENTS/GUARDIAN</label>
+                </div>
+                <div class="orphanage">
+                    <input type="checkbox" name="myself" id="">
+                    <label for="myself">I LIVE IN AN ORPHANAGE</label>
+                </div>
+            </fieldset>
+            <input id="submit-form" class="submit-form" type="submit" value="SUBMIT FORM">
         </form>
     </main>
 </body>
