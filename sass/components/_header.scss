@@ -1,5 +1,5 @@
 @import '../varaibles/colors';
-.header {background-color: #116d85;background-image: url('/assets/elegant.png');background-repeat: no-repeat;color: $white;padding: 4rem 0 8rem 0;text-align: center;height: auto;}
+.header {background-color: #116d85;background-image: url('/assets/elegant.png');background-repeat: no-repeat;color: $white;padding: 10rem 0 10rem 0;text-align: center;height: auto;}
 .nav{display: flex;justify-content: space-between;align-items: center;max-width: 1200px;margin:  0 auto 5rem auto;}
 .nav-menu__list {list-style: none;display: inline-flex;}
 .nav-menu__link {color: $white;margin-left: 20px;}
@@ -36,7 +36,7 @@
 }
 
 @media only screen and (max-width: 900px) {
-    .header {padding: 2rem 0 8rem 0;}
+    .header {padding: 2rem 0 15rem 0;}
     .nav {width: 90%;}
     .logo {width: 85px;}
     .hamburger {display: block;cursor: pointer;}

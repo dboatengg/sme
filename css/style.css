@@ -4,7 +4,7 @@
   background-image: url("/assets/elegant.png");
   background-repeat: no-repeat;
   color: #fff;
-  padding: 4rem 0 8rem 0;
+  padding: 10rem 0 10rem 0;
   text-align: center;
   height: auto;
 }
@@ -132,7 +132,7 @@
 
 @media only screen and (max-width: 900px) {
   .header {
-    padding: 2rem 0 8rem 0;
+    padding: 2rem 0 15rem 0;
   }
   .nav {
     width: 90%;
@@ -1363,11 +1363,11 @@ a {
   border: none;
   color: #fff;
   background-color: #f35b04;
-  padding: 1rem;
+  padding: 1.5rem;
   -webkit-box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
           box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  border-radius: 100%;
+  border-radius: 15px;
   font-size: 2rem;
   z-index: 999;
   -webkit-transition: opacity 0.3s ease-in-out;
