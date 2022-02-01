@@ -1081,8 +1081,11 @@ input[type="checkbox"] {
   font-weight: 700;
 }
 
-.email {
+.email, .address, .nameOfInstitution {
   margin: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0;
 }
 
 .note {
@@ -1307,6 +1310,12 @@ input[type="radio"], input[type="checkbox"] {
   width: 50rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .tname input {
+    width: 30rem;
+  }
+}
+
 /****parent or guardian***/
 .ep, .ld, .pr {
   display: -ms-grid;
@@ -1335,6 +1344,9 @@ input[type="radio"], input[type="checkbox"] {
   background-color: black;
   color: #fff;
   border: 0;
+  padding: 2rem 3rem;
+  font-size: 1.3rem;
+  border-radius: 1rem;
 }
 
 .live label {
