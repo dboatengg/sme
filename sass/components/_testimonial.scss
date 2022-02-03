@@ -13,6 +13,7 @@
 .box .content .image{height: 75px;width: 75px;padding: 3px;background: #6F1DF4;border-radius: 50%;}
 .content .image img{height: 100%;width: 100%;object-fit: cover;border-radius: 50%;border: 2px solid #fff;}
 .box:hover .content .image img{border-color: #fff;}
+.box p {line-height: 1.5;}
   
 @media (max-width: 1045px) {
   .wrapper .box{width: calc(50% - 10px);margin: 10px 0;}
