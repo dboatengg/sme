@@ -51,7 +51,7 @@
         transition: 0.3s;
         padding: 5rem 0;
         box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
+            2px 10px 27px rgba(0, 0, 0, 0.05);
     }
     .nav-menu__list {display: flex;flex-direction: column;}
     .nav-menu__list:not(:last-child){margin-bottom: 3rem;}
