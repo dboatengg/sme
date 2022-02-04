@@ -53,7 +53,8 @@
         box-shadow:
             2px 10px 27px rgba(0, 0, 0, 0.05);
     }
-    .nav-menu__link:hover {color: $dark-blue;background-color: white;margin-left: 0;}
+    .nav-menu__link {margin-left: 0;}
+    .nav-menu__link:hover {color: $dark-blue;background-color: white;}
     .nav-menu__list {display: flex;flex-direction: column;}
     .nav-menu__list:not(:last-child){margin-bottom: 3rem;}
     .nav-menu.active {left: 0;}
