@@ -1020,6 +1020,230 @@ small p {
   line-height: 2;
 }
 
+.modal-container {
+  font-family: 'Poppins', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 1;
+}
+
+.modal button {
+  background-color: #47a386;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 25px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ee9b00;
+  width: 800px;
+  max-width: 90%;
+  gap: 2rem;
+  margin: 0 auto;
+  border-radius: 5px;
+  position: relative;
+  z-index: 999;
+}
+
+.modal__paragraph {
+  opacity: 0.9;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.fa-times {
+  position: absolute;
+  top: 0;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  padding: 1rem;
+  right: 0;
+}
+
+.modal img {
+  border-radius: 5px 0 0 5px;
+}
+
+.modal__title {
+  font-size: 3rem;
+}
+
+.start-up {
+  font-weight: 400;
+  display: block;
+}
+
+.modal-container.hide {
+  opacity: 1;
+}
+
+.essay-header {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 600px;
+  width: 80%;
+  margin: 8rem auto;
+}
+
+.essay-logo {
+  width: 120px;
+}
+
+.essay-header h1 {
+  font-size: 4rem;
+}
+
+.start-up {
+  display: block;
+  font-weight: 400;
+  background-color: red;
+  color: white;
+  padding: 1rem;
+}
+
+.badge {
+  padding: 1rem 2rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  max-width: 400px;
+  width: 80%;
+  margin: 5rem auto 2rem auto;
+  font-size: 2.2rem;
+}
+
+.badge--blue {
+  background-color: #0077B6;
+}
+
+.badge--red {
+  background-color: #F3603C;
+}
+
+.box__content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+  padding: 2rem 0;
+}
+
+.win {
+  background-color: #EE9B00;
+  padding: 3rem;
+  color: #001F54;
+}
+
+.win .box__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.first-prize {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.second-prize {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.third-prize {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.apply {
+  background-color: #FDF0D5;
+  padding: 3rem;
+}
+
+.plagiarism {
+  background-color: #EBEBEB;
+  padding: 3rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .first-prize {
+    font-size: 48px;
+    font-weight: 900;
+  }
+  .second-prize {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .third-prize {
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (max-width: 612px) {
+  .first-prize {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .start-up {
+    font-size: 2.5rem;
+  }
+  .essay-header h1 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .badge {
+    font-size: 2rem;
+  }
+}
+
 /****css reset*****/
 * {
   margin: 0;

@@ -3,6 +3,7 @@ const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navLink = document.querySelectorAll(".nav-menu__link");
 const backToTopButton = document.querySelector(".back-to-top");
+const body = document.getElementsByTagName('body');
 
 for (i=0; i<accordion.length; i++) {
   accordion[i].addEventListener('click', function () {
@@ -63,3 +64,8 @@ const goToTop = () => {
 /****invoke function whenever scroll-to-top button is clicked****/
 backToTopButton.addEventListener("click", goToTop)
 
+
+
+//modal
+const close = document.querySelector('.close');
+const modalContainer = document.querySelector('.modal__container');

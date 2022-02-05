@@ -8,6 +8,8 @@
 @import './components/footer';
 @import './varaibles/mixin';
 @import './components/courses';
+@import './components/modal';
+@import './components/essay';
 
 
 /****css reset*****/
@@ -25,3 +27,6 @@ img {max-width: 100%;height: auto;display: block;}
 .back-to-top {position: fixed;right: 2rem;bottom: 2rem;border: none;color: $white;background-color: #f35b04;padding: 1.5rem;box-shadow: 2px 2px 12px rgba(0,0,0,0.3);cursor: pointer;border-radius: 15px;font-size: 2rem;z-index: 999;transition: opacity 0.3s ease-in-out;}
 .back-to-top:hover {opacity: 0.8;}
 .hidden {opacity: 0;}
+
+
+

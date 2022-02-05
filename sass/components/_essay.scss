@@ -1,0 +1,34 @@
+.essay-header {text-align: center;display: flex;justify-content: center;flex-direction: column;align-items: center;max-width: 600px;width: 80%;margin: 8rem auto;}
+.essay-logo {width: 120px;}
+.essay-header h1 {font-size: 4rem;}
+.start-up {display: block;font-weight: 400;background-color: red;color: white;padding: 1rem;}
+.badge {padding: 1rem 2rem;text-align: center;color: #fff;font-weight: 400;max-width: 400px;width: 80%;margin: 5rem auto 2rem auto;font-size: 2.2rem;}
+.badge--blue{background-color: #0077B6;}
+.badge--red{background-color: #F3603C;}
+.box__content {max-width: 700px;margin: 0 auto;text-align: center;width: 90%;padding: 2rem 0;}
+.win {background-color: #EE9B00;padding: 3rem;color: #001F54;}
+.win .box__content {display: flex;flex-direction: column;gap: 10px;}
+.first-prize {font-size: 60px;font-weight: 900;}
+.second-prize {font-size: 48px;font-weight: 700;}
+.third-prize {font-size: 36px;font-weight: 600;}
+.apply {background-color: #FDF0D5;padding: 3rem;}
+.plagiarism{background-color: #EBEBEB;padding: 3rem;}
+
+
+
+
+@media only screen and (max-width: 800px){
+    .first-prize {font-size: 48px;font-weight: 900;}
+    .second-prize {font-size: 32px;font-weight: 700;}
+    .third-prize {font-size: 24px;font-weight: 600;}
+}
+@media only screen and (max-width: 612px){
+    .first-prize {font-size: 40px;}
+}
+@media only screen and (max-width: 500px){
+    .start-up{font-size: 2.5rem;}
+    .essay-header h1{font-size: 3rem;}
+}
+@media only screen and (max-width: 580px){
+    .badge{font-size: 2rem;}
+}
