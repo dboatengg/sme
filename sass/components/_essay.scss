@@ -1,5 +1,5 @@
-.essay-header {text-align: center;display: flex;justify-content: center;flex-direction: column;align-items: center;max-width: 600px;width: 80%;margin: 6rem auto;}
-.essay-logo {width: 120px;}
+.essay-header {text-align: center;display: flex;justify-content: center;flex-direction: column;align-items: center;max-width: 600px;width: 80%;margin: 3rem auto;}
+.essay-logo {width: 80px;}
 .essay-header h1 {font-size: 4rem;}
 .start-upp {display: block;font-weight: 400;padding: 1rem;}
 .badge {padding: 1rem 2rem;text-align: center;color: #fff;font-weight: 400;max-width: 400px;width: 80%;margin: 5rem auto 2rem auto;font-size: 2.2rem;}
@@ -32,7 +32,7 @@
     .badge{font-size: 2rem;}
 }
 @media only screen and (max-width: 530px){
-    .first-prize {font-size: 28px;font-weight: 900;}
-    .second-prize {font-size: 24px;font-weight: 700;}
-    .third-prize {font-size: 20px;font-weight: 600;}
+    .first-prize {font-size: 25px;font-weight: 900;}
+    .second-prize {font-size: 22px;font-weight: 700;}
+    .third-prize {font-size: 18px;font-weight: 600;}
 }

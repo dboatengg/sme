@@ -1184,11 +1184,11 @@ small p {
           align-items: center;
   max-width: 600px;
   width: 80%;
-  margin: 6rem auto;
+  margin: 3rem auto;
 }
 
 .essay-logo {
-  width: 120px;
+  width: 80px;
 }
 
 .essay-header h1 {
@@ -1308,15 +1308,15 @@ small p {
 
 @media only screen and (max-width: 530px) {
   .first-prize {
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 900;
   }
   .second-prize {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
   }
   .third-prize {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
   }
 }
