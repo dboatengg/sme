@@ -1025,6 +1025,9 @@ small p {
 }
 
 .modal {
+  -webkit-transition: display 0.3s ease-in;
+  transition: display 0.3s ease-in;
+  display: none;
   position: fixed;
   font-family: 'Poppins',sans-serif;
   top: 0;
