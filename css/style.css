@@ -1131,11 +1131,9 @@ small p {
   font-size: 4rem;
 }
 
-.start-up {
+.start-upp {
   display: block;
   font-weight: 400;
-  background-color: red;
-  color: white;
   padding: 1rem;
 }
 
@@ -1190,12 +1188,12 @@ small p {
 
 .second-prize {
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .third-prize {
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .apply {
@@ -1230,7 +1228,7 @@ small p {
 }
 
 @media only screen and (max-width: 500px) {
-  .start-up {
+  .start-upp {
     font-size: 2.5rem;
   }
   .essay-header h1 {
@@ -1241,6 +1239,21 @@ small p {
 @media only screen and (max-width: 580px) {
   .badge {
     font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .first-prize {
+    font-size: 28px;
+    font-weight: 900;
+  }
+  .second-prize {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .third-prize {
+    font-size: 20px;
+    font-weight: 600;
   }
 }
 
