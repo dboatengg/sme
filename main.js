@@ -68,4 +68,5 @@ backToTopButton.addEventListener("click", goToTop)
 
 //modal
 const close = document.querySelector('.close');
-const modalContainer = document.querySelector('.modal__container');
+const modalContainer = document.querySelector('.modal');
+

@@ -221,7 +221,7 @@
 
 .about__content {
   max-width: 1400px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .about__title {
@@ -1020,6 +1020,10 @@ small p {
   line-height: 2;
 }
 
+.modal.show {
+  display: block;
+}
+
 .modal {
   position: fixed;
   font-family: 'Poppins',sans-serif;
@@ -1052,6 +1056,7 @@ small p {
       -ms-flex-direction: row;
           flex-direction: row;
   max-width: 800px;
+  width: 80%;
   background-color: #EE9B00;
   padding: 2rem;
   border-radius: 10px;
@@ -1153,6 +1158,9 @@ small p {
   }
   .modal button {
     font-size: 1rem;
+  }
+  .fa-times {
+    font-size: 2rem;
   }
 }
 

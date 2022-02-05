@@ -4,8 +4,9 @@
 // .modal img {border-radius: 5px 0 0 5px;}
 // .modal-container.hide{opacity: 1;}
 
+.modal.show{display: block;}
 .modal {position: fixed;font-family: 'Poppins',sans-serif;top: 0;left: 0;z-index: 999;overflow: auto;width: 100vw;height: 100vh;background-color: rgba(0,0,0,0.3);}
-.modal__content{position: fixed;left: 50%;top: 50%;transform: translate(-50%, -50%);display: flex;align-items: center;justify-content: center;flex-direction: row;max-width: 800px;background-color: #EE9B00;padding: 2rem;border-radius: 10px;}
+.modal__content{position: fixed;left: 50%;top: 50%;transform: translate(-50%, -50%);display: flex;align-items: center;justify-content: center;flex-direction: row;max-width: 800px;width: 80%;background-color: #EE9B00;padding: 2rem;border-radius: 10px;}
 .fa-times {position: absolute;top: 0;font-size: 30px;color: #fff;cursor: pointer;padding: 1rem;right: 0;}
 .modal button{background-color: #116d85;transition: background-color 0.2s ease-in-out;color: #fff;border: 0;border-radius: 5px;padding: 10px 25px;cursor:pointer;box-shadow: 0px 2px 4px rgba(0,0,0,0.2);font-size: 14px;margin-top: 10px;}
 .modal img {width: 300px;height: auto;display: block;}
@@ -30,4 +31,5 @@
     .modal__title{font-size: 1.6rem;}
     .modal__paragraph{font-size: 1rem;}
     .modal button {font-size: 1rem;}
+    .fa-times{font-size: 2rem;}
 }
