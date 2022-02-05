@@ -1133,10 +1133,10 @@ small p {
     text-align: center;
   }
   .modal__title {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .modal__paragraph {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
   .modal button {
     font-size: 1.2rem;
@@ -1154,10 +1154,10 @@ small p {
     text-align: center;
   }
   .modal__title {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   .modal__paragraph {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .modal button {
     font-size: 1rem;
