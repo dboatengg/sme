@@ -73,7 +73,7 @@ const modalContainer = document.querySelector('.modal');
 
 setTimeout(() => {
   modalContainer.classList.add('show');
-}, 3000);
+}, 8000);
 
 close.addEventListener('click', ()=>{
   modalContainer.classList.remove('show');
