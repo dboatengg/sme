@@ -78,3 +78,11 @@ setTimeout(() => {
 close.addEventListener('click', ()=>{
   modalContainer.classList.remove('show');
 })
+
+/*****loader****/ 
+// window.onload = function(){
+//   document.getElementById("loader-container").style.display="none"
+// }
+window.addEventListener('load',()=>{
+    document.getElementById("loader-container").style.display="none"
+})
