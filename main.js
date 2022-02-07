@@ -79,10 +79,35 @@ close.addEventListener('click', ()=>{
   modalContainer.classList.remove('show');
 })
 
-/*****loader****/ 
-// window.onload = function(){
-//   document.getElementById("loader-container").style.display="none"
-// }
-window.addEventListener('load',()=>{
-    document.getElementById("loader-container").style.display="none"
-})
+/****display today's date****/
+function display_ct5(){
+  const today = new Date();
+  const hours = (today.getHours()%12) ? hours : 12;
+  const hour =  hours.toString().length==1? 0+hours.toString() : hours;
+  
+  const minutes = today.getMinutes();
+  const minute = minutes.toString().length==1 ? 0+minutes : minutes;
+
+  const seconds = today.getSeconds()
+  const second = seconds.toString().length==1 ? 0+seconds : seconds;
+
+  // hours = hours ? hours : 12;
+  const ampm = (parseInt(hours) >=12)?'PM':'AM';
+  const monthList = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+  const month = today.getMonth();
+  const date = (monthList[month])+' '+today.getDate()+', '+today.getFullYear();
+  const time = hour+":"+minute+":"+second+" "+ampm;
+
+
+  const datetime = date +" - "+time;
+  document.getElementById('ct5').innerHTML = datetime;
+
+  display_c5();
+
+}
+
+function display_c5(){
+  setTimeout(()=>{display_ct5()},1000)
+}
+
+display_c5();
