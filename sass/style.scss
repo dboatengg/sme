@@ -49,3 +49,21 @@ img {max-width: 100%;height: auto;display: block;}
     font-size: 2rem;
 }
 @media only screen and (max-width: 400px){.top-bar {font-size: 1.6rem;}}
+
+
+
+// payment page 
+.mark{background-color: #f4f1de;display: flex;justify-content: center;align-items: center;height: 100vh;font-family: 'Montserrat';}
+.mark__img {width: 150px;margin: 0 auto;}
+.mark-main{max-width: 900px;margin: 0 auto;text-align: center;width: 80%;}
+.mark-paragraph{font-size: 25px;line-height: 1.6;}
+.mark-paragraph span {font-weight: bold;}
+.proceed__img {display: flex;justify-content: center;gap: 40px;margin-top: 20px;align-items: center;}
+.proceed{margin-top: 50px;}
+.proceed__paragraph{font-size: 2rem;}
+.proceed img {max-width: 400px;height: auto; display: block;}
+.proceed__paragraph span {font-weight: bold;}
+@media only screen and (max-width: 1024px){
+    .proceed__img{flex-direction: column;}
+    .mark{height: 120vh;}
+}
