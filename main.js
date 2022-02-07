@@ -82,8 +82,16 @@ close.addEventListener('click', ()=>{
 /****display today's date****/
 function display_ct5(){
   const today = new Date();
-  const hours = (today.getHours()%12) ? hours : 12;
-  const hour =  hours.toString().length==1? 0+hours.toString() : hours;
+  const hours = today.getHours();
+  const ampm = (hours >=12)?'PM':'AM';
+  const hour = (today.getHours()%12) ? hours : 12;
+  const hourD =  hour.toString().length==1? 0+hour.toString() : hour;
+
+  // var x = new Date()
+// var ampm = x.getHours( ) >= 12 ? ' PM' : ' AM';
+// hours = x.getHours( ) % 12;
+// hours = hours ? hours : 12;
+// hours=hours.toString().length==1? 0+hours.toString() : hours;
   
   const minutes = today.getMinutes();
   const minute = minutes.toString().length==1 ? 0+minutes : minutes;
@@ -92,11 +100,10 @@ function display_ct5(){
   const second = seconds.toString().length==1 ? 0+seconds : seconds;
 
   // hours = hours ? hours : 12;
-  const ampm = (parseInt(hours) >=12)?'PM':'AM';
   const monthList = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
   const month = today.getMonth();
   const date = (monthList[month])+' '+today.getDate()+', '+today.getFullYear();
-  const time = hour+":"+minute+":"+second+" "+ampm;
+  const time = hourD+":"+minute+":"+second+" "+ampm;
 
 
   const datetime = date +" - "+time;
