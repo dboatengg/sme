@@ -35,7 +35,7 @@
   margin-left: 20px;
   -webkit-transition: 0.1s;
   transition: 0.1s;
-  padding: 1.5rem;
+  padding: 0.5rem;
 }
 
 .hamburger {
@@ -150,7 +150,7 @@
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 11rem;
+    top: 18rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -169,7 +169,7 @@
   }
   .nav-menu__link:hover {
     color: #14213D;
-    background-color: white;
+    color: grey;
   }
   .nav-menu__list {
     display: -webkit-box;

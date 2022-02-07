@@ -83,7 +83,7 @@ close.addEventListener('click', ()=>{
 function display_ct5(){
   const today = new Date();
   const hours = today.getHours()%12;
-  const ampm = (hours >=12)?'PM':'AM';
+  const ampm = (hours >=12)?'AM':'PM';
   const hour = (today.getHours()) ? hours : 12;
   const hourD =  hour.toString().length===1? 0+hour.toString() : hour;
   
