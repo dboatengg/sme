@@ -36,6 +36,7 @@
   -webkit-transition: 0.1s;
   transition: 0.1s;
   padding: 0.5rem;
+  font-size: 1.6rem;
 }
 
 .hamburger {
