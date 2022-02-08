@@ -5,6 +5,7 @@ const navLink = document.querySelectorAll(".nav-menu__link");
 const backToTopButton = document.querySelector(".back-to-top");
 const body = document.getElementsByTagName('body');
 
+
 for (i=0; i<accordion.length; i++) {
   accordion[i].addEventListener('click', function () {
     this.classList.toggle('active')
