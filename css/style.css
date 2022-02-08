@@ -491,6 +491,10 @@
   .wrapper .box {
     padding: 0 3rem;
   }
+  .box p {
+    line-height: 1.5;
+    font-size: 1.8rem;
+  }
 }
 
 /*****swiperjs******/
