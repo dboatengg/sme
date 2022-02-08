@@ -27,6 +27,7 @@
 
     <title>Sponsor My Education</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <!-- <link rel="favicon" href="assets/loogoo.png"> -->
 
@@ -45,6 +46,15 @@
 <!-- font awesome -->
 <script src="https://kit.fontawesome.com/fc5c7c40e3.js" crossorigin="anonymous"></script>
 
+
+<!-- swiperjs  -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+
+
+
 </head>
 <body onload="display_ct5()">
   <section class="top-bar">
@@ -61,7 +71,7 @@
             <li class="nav-menu__list"><a class="nav-menu__link" href="index.html">Home</a></li>
             <li class="nav-menu__list"><a class="nav-menu__link" href="#about">About</a></li>
             <li class="nav-menu__list"><a class="nav-menu__link" href="/pages/courses.html">Courses</a></li>
-            <li class="nav-menu__list"><a class="nav-menu__link" href="payment.html">Gallery</a></li>
+            <li class="nav-menu__list"><a class="nav-menu__link" href="#">Gallery</a></li>
             <li class="nav-menu__list"><a class="nav-menu__link" href="http://www.universitynow.online/">Online studies</a></li>
           </ul>
           <div class="hamburger">
@@ -163,45 +173,85 @@
         <!-- testimonial section  -->
         <section class="testimonial">
             <h1 class="testimonial__title">What Our Past Students Are Saying</h1>
-            <div class="wrapper">
-                <div class="box">
-                  <i class="fas fa-quote-left quote"></i>
-                  <p>As a foreigner in Ghana, education was quite expensive till I came across <b>Sponsor My Education</b>. I enrolled for their sponsorship scheme and now I am a certified UK learner.</p>
-                  <div class="content">
-                    <div class="info">
-                      <div class="name">Patience Nomusa Sibanda</div>
-                    </div>
-                    <div class="image">
-                      <img src="assets/avatar1.png" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="box">
-                  <i class="fas fa-quote-left quote"></i>
-                  <p>I had the opportunity to study with IPED-UK through <b>Sponsor My Education</b>. The inspirations and counseling I received there were eye-opening. Today, I have the courage to start my own business.</p>
-                  <div class="content">
-                    <div class="info">
-                      <div class="name">Collins Bosompem</div>
-                    </div>
-                    <div class="image">
-                      <img src="assets/avatar2.png" alt="">
+            <div class="swiper">
+                <div class="wrapper swiper-wrapper">
+                  <div class="box swiper-slide">
+                    <div class="boxx">
+                      <i class="fas fa-quote-left quote"></i>
+                      <p> Come on board with SME and have the chance to break free from the cycle of poverty through better education. SME is the ideal and trusted solution.
+                        </p>
+                      <div class="content">
+                        <div class="info">
+                          <div class="name">Lorreta Morrison</div>
+                        </div>
+                        <div class="image">
+                          <img src="assets/morrison.jpeg" alt="">
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="box">
-                  <i class="fas fa-quote-left  quote"></i>
-                  <p>I believe <b>Sponsor My Education</b> is set to have a transformative effect on the overall landscape of tertiary education  in Ghana. God bless all of you at SME.</p>
-                  <div class="content">
-                    <div class="info">
-                      <div class="name">Suzanne Ahiatrogah</div>
-                    </div>
-                    <div class="image">
-                      <img src="assets/avatar3.png" alt="">
+                  <div class="box swiper-slide">
+                    <div class="boxx">
+                      <i class="fas fa-quote-left quote"></i>
+                      <p>As a foreigner in Ghana, education was quite expensive till I came across <b>Sponsor My Education</b>. I enrolled for their sponsorship scheme and now I am a certified UK learner.</p>
+                      <div class="content">
+                        <div class="info">
+                          <div class="name">Patience Sibanda</div>
+                        </div>
+                        <div class="image">
+                          <img src="assets/avatar1.png" alt="">
+                        </div>
+                      </div>
                     </div>
                   </div>
+                  <div class="box swiper-slide">
+                    <div class="boxx">
+                      <i class="fas fa-quote-left quote"></i>
+                      <p>I had the opportunity to study with IPED-UK through <b>Sponsor My Education</b>. The inspirations and counseling I received there were eye-opening. Today, I have the courage to start my own business.</p>
+                      <div class="content">
+                        <div class="info">
+                          <div class="name">Collins Bosompem</div>
+                        </div>
+                        <div class="image">
+                          <img src="assets/avatar2.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box swiper-slide">
+                    <div class="boxx">
+                      <i class="fas fa-quote-left  quote"></i>
+                      <p>I believe <b>Sponsor My Education</b> is set to have a transformative effect on the overall landscape of tertiary education  in Ghana. God bless all of you at SME.</p>
+                      <div class="content">
+                        <div class="info">
+                          <div class="name">Suzanne Ahiatrogah</div>
+                        </div>
+                        <div class="image">
+                          <img src="assets/avatar3.png" alt="">
+                        </div>
+                      </div>
+                      </div>
+                    </div>
                 </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
               </div>
         </section>
+
+
+        <!-- Slider main container -->
+<!-- <div class="swiper"> -->
+  <!-- Additional required wrapper -->
+  <!-- <div class="swiper-wrapper"> -->
+    <!-- Slides -->
+    <!-- <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div> -->
 
         <!-- gallery section  -->
         <section class="gallery">
@@ -347,11 +397,12 @@
                     </ul>
                 </nav>
                 <small>&copy; Copyright SME 2022</small>
-                        </div>
+                </div>
             </div>
       </div>
       
   </footer>
     <script src="main.js"></script>
+    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
 </body>
 </html>

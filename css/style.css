@@ -412,34 +412,14 @@
   margin-bottom: 4rem;
 }
 
-.wrapper {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1rem;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .wrapper .box {
   background: #fff;
-  padding: 15px;
-  border-radius: 3px;
+  border-radius: 5px;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  padding: 0 5rem;
+  max-width: 800px;
+  width: 90%;
 }
 
 .wrapper .box i.quote {
@@ -451,20 +431,17 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 10px;
+  gap: 2rem;
+  margin-top: 10px;
 }
 
 .box .info .name {
   font-weight: 600;
   font-size: 17px;
+  word-wrap: break-word;
 }
 
 .box .info .job {
@@ -504,31 +481,35 @@
 
 .box p {
   line-height: 1.5;
-}
-
-@media (max-width: 1045px) {
-  .wrapper .box {
-    width: calc(50% - 10px);
-    margin: 10px 0;
-  }
-  .wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+  font-size: 2.4rem;
 }
 
 @media (max-width: 702px) {
-  .wrapper .box {
-    width: 100%;
-  }
   .testimonial__title {
     width: 80%;
   }
-  .testimonial .wrapper {
-    width: 80%;
+  .wrapper .box {
+    padding: 0 3rem;
   }
+}
+
+/*****swiperjs******/
+.swiper {
+  max-width: 800px;
+  width: 90%;
+  height: 400px;
+}
+
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer__top {
@@ -1258,6 +1239,8 @@
   padding: 0;
   font-size: 1em;
   font-family: inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {

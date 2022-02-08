@@ -112,3 +112,38 @@ function display_c5(){
 }
 
 display_c5();
+
+
+
+
+
+/****swiperjs******/
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  speed:600,
+  parallax: true,
+  loop: true,
+  autoplay: true,
+  mousewheel: true,
+  keyboard: true,
+  cssMode: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    dynamicBullets: true,
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
