@@ -122,7 +122,7 @@ const swiper = new Swiper('.swiper', {
   // Optional parameters
   speed:600,
   parallax: true,
-  loop: true,
+  loop: false,
   autoplay: true,
   mousewheel: true,
   keyboard: true,
