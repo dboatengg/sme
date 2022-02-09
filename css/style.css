@@ -1352,7 +1352,8 @@ img {
   }
 }
 
-.mark {
+/******payment page********/
+.payment {
   background-color: #f4f1de;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1364,15 +1365,20 @@ img {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  font-family: 'Montserrat';
 }
 
 .mark__img {
-  width: 150px;
+  width: 30%;
   margin: 0 auto;
 }
 
-.mark-main {
+.mark, .proceed__title {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.payment__content {
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
@@ -1380,7 +1386,7 @@ img {
 }
 
 .mark-paragraph {
-  font-size: 25px;
+  font-size: 20px;
   line-height: 1.6;
 }
 
@@ -1395,7 +1401,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 40px;
+  gap: 20px;
   margin-top: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1406,7 +1412,7 @@ img {
   margin-top: 50px;
 }
 
-.proceed__paragraph {
+.proceed__title {
   font-size: 2rem;
 }
 
@@ -1427,11 +1433,8 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .mark {
+  .payment {
     height: 120vh;
-  }
-  .mark__img {
-    width: 80px;
   }
 }
 /*# sourceMappingURL=style.css.map */
