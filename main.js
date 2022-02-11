@@ -120,7 +120,7 @@ display_c5();
 /****swiperjs******/
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-  speed:600,
+  speed:900,
   parallax: true,
   loop: false,
   autoplay: true,
@@ -147,3 +147,21 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
+
+// swiper 1 
+const swiper1 = new Swiper('.swiper1', {
+  autoplay: false,
+  loop: false,
+
+  pagination: {
+    el: '.swiper-pagination1',
+    dynamicBullets: true,
+    clickable: true,
+  },
+
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

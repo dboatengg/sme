@@ -703,17 +703,6 @@
   margin-bottom: 4rem;
 }
 
-.gallery__images {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (300px)[auto-fill];
-      grid-template-columns: repeat(auto-fill, 300px);
-  grid-gap: 1.5rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .gallery__img {
   max-width: 100%;
   border-radius: 1rem;
@@ -722,9 +711,18 @@
      object-fit: cover;
 }
 
+.swiper1 {
+  max-width: 800px;
+  width: 90%;
+  height: auto;
+}
+
 @media only screen and (max-width: 760px) {
   .header {
     background-position: 30% 100%;
+  }
+  .gallery__content {
+    padding: 7rem 0 3rem 0;
   }
 }
 

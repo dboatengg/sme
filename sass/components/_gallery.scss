@@ -1,9 +1,10 @@
 .gallery {color: white;background-color: #6F1DF4;background-image: url('/assets/elegant.png');margin-top: 0;}
 .gallery__content {max-width: 1200px;margin: 0 auto;padding: 10rem 0;}
 .gallery__title {text-align: center;font-size: 4rem;margin-bottom: 4rem;}
-.gallery__images {display: grid;grid-template-columns: repeat(auto-fill, 300px);grid-gap: 1.5rem;justify-content: center;}
 .gallery__img {max-width: 100%;border-radius: 1rem;height: auto;object-fit: cover;}
+.swiper1{max-width: 800px;width: 90%;height: auto;}
 
 @media only screen and (max-width: 760px){
     .header {background-position: 30% 100%;}
+    .gallery__content{padding: 7rem 0 3rem 0;}
 }
