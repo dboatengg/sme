@@ -159,9 +159,8 @@ const swiper1 = new Swiper('.swiper1', {
     clickable: true,
   },
 
-
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next1',
+    prevEl: '.swiper-button-prev1',
   },
 });
