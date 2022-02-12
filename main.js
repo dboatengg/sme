@@ -74,7 +74,7 @@ const modalContainer = document.querySelector('.modal');
 
 setTimeout(() => {
   modalContainer.classList.add('show');
-}, 8000);
+}, 12000);
 
 close.addEventListener('click', ()=>{
   modalContainer.classList.remove('show');
@@ -120,7 +120,7 @@ display_c5();
 /****swiperjs******/
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-  speed:900,
+  speed:700,
   parallax: true,
   loop: false,
   autoplay: true,
@@ -164,3 +164,11 @@ const swiper1 = new Swiper('.swiper1', {
     prevEl: '.swiper-button-prev1',
   },
 });
+
+
+
+//hide loader when window loads and add 2 seconds to loading time
+window.addEventListener('load',setTimeout(() => {
+  document.querySelector('.loader-content').classList.add('hide');
+}, 2000)
+);
