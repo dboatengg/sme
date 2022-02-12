@@ -1256,6 +1256,10 @@ html {
   -webkit-overflow-scrolling: touch;
 }
 
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1289,6 +1293,10 @@ img {
 .btn:hover {
   -webkit-filter: opacity(0.9);
           filter: opacity(0.9);
+}
+
+.main {
+  overflow-y: scroll;
 }
 
 /*****scroll bar*****/

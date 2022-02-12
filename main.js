@@ -83,22 +83,50 @@ close.addEventListener('click', ()=>{
 /****display today's date****/
 function display_ct5(){
   const today = new Date();
-  const hours = today.getHours()%12;
-  const ampm = (hours >=12)?'AM':'PM';
-  const hour = (today.getHours()) ? hours : 12;
-  const hourD =  hour.toString().length===1? 0+hour.toString() : hour;
+  // const hours = today.getHours()%12;
+  // const ampm = (hours >=12)?'AM':'PM';
+  // const hour = (today.getHours()) ? hours : 12;
+  // const hourD =  hour.toString().length===1? 0+hour.toString() : hour;
   
-  const minutes = today.getMinutes();
-  const minute = minutes.toString().length===1 ? '0'+minutes : minutes;
+  // const minutes = today.getMinutes();
+  // const minute = minutes.toString().length===1 ? '0'+minutes : minutes;
 
-  const seconds = today.getSeconds();
-  const second = seconds.toString().length===1 ? '0'+seconds : seconds;
+  // const seconds = today.getSeconds();
+  // const second = seconds.toString().length===1 ? '0'+seconds : seconds;
+
+
+  // var now = new Date();
+  var TwentyFourHour = today.getHours();
+  var hour = today.getHours();
+  var min = today.getMinutes();
+  var sec = today.getSeconds();
+  var mid = 'PM';
+  if (min < 10) {
+    min = "0" + min;
+  }
+  if (hour > 12) {
+    hour = hour - 12;
+  }    
+  if(hour==0){ 
+    hour=12;
+  }
+
+//Adding '0' in front of minute and seconds when they are a single number
+const secTime = sec.toString().length === 1?'0'+sec: sec;
+const minTime = min.toString().length === 1?'0'+min: min;
+    
+  if(TwentyFourHour < 12) {
+     mid = 'AM';
+  }     
+  // else {mid = 'PM'}
+// document.getElementById('currentTime').innerHTML =     hour+':'+minTime+':'+secTime +' '+mid ;
+
+// setTimeout(clock, 1000);}
 
   const monthList = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
   const month = today.getMonth();
   const date = (monthList[month])+' '+today.getDate()+', '+today.getFullYear();
-  const time = hourD+":"+minute+":"+second+" "+ampm;
-
+  const time = hour+":"+minTime+":"+secTime+" "+mid;
 
   const datetime = date +" - "+time;
   document.getElementById('ct5').innerHTML = datetime;
@@ -166,9 +194,19 @@ const swiper1 = new Swiper('.swiper1', {
 });
 
 
-
 //hide loader when window loads and add 2 seconds to loading time
 window.addEventListener('load',setTimeout(() => {
   document.querySelector('.loader-content').classList.add('hide');
 }, 2000)
 );
+
+
+
+// smooth scroll 
+seamless.polyfill();
+seamless.windowScrollBy(window,{ behavior:'smooth', top:200,left:0});
+seamless.elementScrollIntoView(document.querySelector("#target"), {
+  behavior: 'smooth',
+  block: 'center',
+  inline: 'center',
+})
