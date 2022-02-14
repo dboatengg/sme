@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sponsor My Education - Gallery</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     <!-- favicon -->
     <!-- <link rel="favicon" href="assets/loogoo.png"> -->
@@ -17,20 +17,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <!-- favicon -->
-<link rel="icon" type="image/x-icon" href="assets/favicon.png">
+<link rel="icon" type="image/x-icon" href="/assets/favicon.png">
 
 <!-- font awesome -->
 <script src="https://kit.fontawesome.com/fc5c7c40e3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header gallery-header">
-        <nav class="nav">
-            <a href="index.html"><img class="logo" src="assets/logo.svg" alt=""></a>
+    <header class="header" id="gallery__header">
+        <!-- navbar  -->
+        <nav class="nav" id="gallery-nav">
+            <a href="/index.html"><img class="logo" src="/assets/logo.svg" alt="logo"></a>
             <ul class="nav-menu">
-              <li class="nav-menu__list"><a class="nav-menu__link" href="index.html">Home</a></li>
-              <li class="nav-menu__list"><a class="nav-menu__link" href="#">About</a></li>
-              <li class="nav-menu__list"><a class="nav-menu__link" href="#">Courses</a></li>
-              <li class="nav-menu__list"><a class="nav-menu__link" href="#">Gallery</a></li>
+              <li class="nav-menu__list"><a class="nav-menu__link" href="/index.html">Home</a></li>
+              <!-- <li class="nav-menu__list"><a class="nav-menu__link" href="#about">About</a></li> -->
+              <li class="nav-menu__list"><a class="nav-menu__link" href="/pages/courses.html">Courses</a></li>
+              <li class="nav-menu__list"><a class="nav-menu__link" href="/pages/gallery.html">Gallery</a></li>
+              <li class="nav-menu__list"><a class="nav-menu__link" href="http://www.universitynow.online/">Online studies</a></li>
             </ul>
             <div class="hamburger">
               <span onclick="lockScroll();" class="bar"></span>
@@ -38,8 +40,93 @@
               <span onclick="lockScroll();" class="bar"></span>
           </div>
           </nav>
-    </header>
-    <main class="gallery">
+      </header>
+    <main class="gal">
+        <section class=" gallery-main">
+            <div class="content">
+                <!-- <h1 class="title">Our Gallery</h1> -->
+                <div class="gallery__container">
+                    <img src="/assets/img-onee.jpg" class="gallery__img" alt="Image 1">    
+                    <img src="/assets/img-twoo.jpg" class="gallery__img" alt="Image 2">
+                    <img src="/assets/img-threee.jpg" class="gallery__img" alt="Image 3">
+                    <img src="/assets/img-seven.jpeg" class="gallery__img" alt="Image 4">
+                    <img src="/assets/img-eight.png" class="gallery__img" alt="Image 5">
+                    <img src="/assets/img-sixx.jpeg" class="gallery__img" alt="Image 6">
+                    <img src="/assets/img-five.jpeg" class="gallery__img" alt="Image 7">
+                    <img src="/assets/img-four.jpeg" class="gallery__img" alt="Image 8">
+                    <img src="/assets/img-nine.jpeg" class="gallery__img" alt="Image 9">
+                    <img src="/assets/img-ten.jpeg" class="gallery__img" alt="Image 10">
+                    <img src="/assets/img-eleven.jpeg" class="gallery__img" alt="Image 11">
+                    <img src="/assets/img-twelve.jpeg" class="gallery__img" alt="Image 12">
+                </div>     
+            </div>
+          </section>
     </main>
+        <!-- footer  -->
+        <footer class="footer">
+            <div class="footer__content">
+              <div class="footer__top">
+                  <div class="footer__top-content">
+                      <div class="footer__left">
+                          <h1 class="footer__title">Get in touch with us on social media</h1>
+                          <div class="footer__icons">
+                            <a href="https://wa.link/3szr1i"><i class="fab fa-whatsapp"></i></a>
+                              <a href="https://web.facebook.com/ghscholarships?_rdc=1&_rdr" target="_blank"><i class="fab fa-facebook"></i></a>
+                              <a href=""><i class="fab fa-instagram"></i></a>
+                              <a href=""><i class="fab fa-linkedin"></i></a>
+                          </div>
+                      </div>
+                      <div class="footer__right">
+                          <div class="">
+                              <p class="title">Our Contact Numbers</p>
+                              <a href="tel:0302-937-684">
+                                <p class="text">0302-937-684</p>
+                              </a>
+                              <a href="tel:0244-796-089">
+                                <p class="text">0244-796-089</p>
+                              </a>
+                              <a href="tel:0244-699-732">
+                                <p class="text">0244-699-732</p>
+                              </a>
+                              <a href="tel:0200-608-041">
+                                <p class="text">0200-608-041</p>
+                              </a>
+                          </div>
+                          <div class="">
+                              <p class="title">Email</p>
+                              <a href="mailto:info.sponsormyeducation@gmail.com">
+                                <p class="text">info.sponsormyedu@gmail.com</p>
+                              </a>
+                          </div>
+                          <div class="">
+                              <p class="title">Address</p>
+                              <p class="text">Christ Mission Bus Stop, Santa-Maria Road</p>
+                          </div>
+                          <div class="">
+                              <p class="title">We are open</p>
+                              <p class="text">Monday to Saturday 8:00AM to 5:00PM</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="footer__bottom">
+                  <div class="footer__bottom-content">
+                      <img src="/assets/favicon2.png" alt="" class="logo">
+                      <nav class="footerNav">
+                          <ul class="footerNavMenu">
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="#about">About</a></li>
+                              <li><a target="_blank" rel="reoopener" href="pages/courses.html">Courses</a></li>
+                              <li><a href="#">Gallery</a></li>
+                              <li><a target="_blank" rel="reoopener" href="http://www.universitynow.online/">Online studies</a></li>
+                          </ul>
+                      </nav>
+                      <small>&copy; Copyright SME 2022</small>
+                      </div>
+                  </div>
+            </div>
+            
+        </footer>
+    <script src="/main.js"></script>
 </body>
 </html>

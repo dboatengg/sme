@@ -83,19 +83,6 @@ close.addEventListener('click', ()=>{
 /****display today's date****/
 function display_ct5(){
   const today = new Date();
-  // const hours = today.getHours()%12;
-  // const ampm = (hours >=12)?'AM':'PM';
-  // const hour = (today.getHours()) ? hours : 12;
-  // const hourD =  hour.toString().length===1? 0+hour.toString() : hour;
-  
-  // const minutes = today.getMinutes();
-  // const minute = minutes.toString().length===1 ? '0'+minutes : minutes;
-
-  // const seconds = today.getSeconds();
-  // const second = seconds.toString().length===1 ? '0'+seconds : seconds;
-
-
-  // var now = new Date();
   var TwentyFourHour = today.getHours();
   var hour = today.getHours();
   var min = today.getMinutes();
@@ -203,10 +190,10 @@ window.addEventListener('load',setTimeout(() => {
 
 
 // smooth scroll 
-seamless.polyfill();
-seamless.windowScrollBy(window,{ behavior:'smooth', top:200,left:0});
-seamless.elementScrollIntoView(document.querySelector("#target"), {
-  behavior: 'smooth',
-  block: 'center',
-  inline: 'center',
-})
+// seamless.polyfill();
+// seamless.windowScrollBy(window,{ behavior:'smooth', top:200,left:0});
+// seamless.elementScrollIntoView(document.querySelector("#target"), {
+//   behavior: 'smooth',
+//   block: 'center',
+//   inline: 'center',
+// })

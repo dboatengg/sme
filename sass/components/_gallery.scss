@@ -8,3 +8,23 @@
     .header {background-position: 30% 100%;}
     .gallery__content{padding: 7rem 0 3rem 0;}
 }
+
+
+
+/***********gallery page*********/
+.gallery__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+    justify-items: center;
+    gap: 10px;
+    line-height:0;
+}
+.gallery-main .content {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+#gallery-nav {margin: 0 auto;}
+#gallery__header {padding: 1rem 0;}
+.gallery__main .title {margin: 2rem;font-size: 4rem;}
+.gal{margin: 8rem 0;}

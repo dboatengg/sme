@@ -726,6 +726,40 @@
   }
 }
 
+/***********gallery page*********/
+.gallery__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  justify-items: center;
+  gap: 10px;
+  line-height: 0;
+}
+
+.gallery-main .content {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#gallery-nav {
+  margin: 0 auto;
+}
+
+#gallery__header {
+  padding: 1rem 0;
+}
+
+.gallery__main .title {
+  margin: 2rem;
+  font-size: 4rem;
+}
+
+.gal {
+  margin: 8rem 0;
+}
+
 .footer__top {
   background-color: #1e1b1b;
   opacity: 0.98;
@@ -890,7 +924,11 @@
 }
 
 .course-header {
-  padding: 0.2rem 0;
+  padding: 3rem 0;
+}
+
+.course-nav {
+  margin: 0 auto;
 }
 
 .course-main {
