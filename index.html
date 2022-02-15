@@ -55,9 +55,7 @@
 />
 
 <!-- polyfill -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@latest/lib/"></script> -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.polyfills.min.js"></script>
-<!-- <script type="text/javascript" src="https://unpkg.com/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script> -->
 
 </head>
 <body onload="display_ct5()">
@@ -75,7 +73,7 @@
             <li class="nav-menu__list"><a class="nav-menu__link" href="index.html">Home</a></li>
             <li class="nav-menu__list"><a class="nav-menu__link" href="#about">About</a></li>
             <li class="nav-menu__list"><a class="nav-menu__link" href="/pages/courses.html">Courses</a></li>
-            <li class="nav-menu__list"><a class="nav-menu__link" href="/pages/gallery.html">Gallery</a></li>
+            <li class="nav-menu__list"><a class="nav-menu__link" href="/">Gallery</a></li>
             <li class="nav-menu__list"><a class="nav-menu__link" href="http://www.universitynow.online/">Online studies</a></li>
           </ul>
           <div class="hamburger">
@@ -99,7 +97,6 @@
         <span class="loader"><span class="loader-inner"></span></span>
       </div>
     </div>
-
 
     <!-- modal  -->
       <div id="myModal" class="modal">
@@ -144,17 +141,31 @@
                       <hr>
                       <div class="container">
                         <div class="label">LIFE INSURANCE</div>
-                        <div class="content">Whiles with us, we give you an insurance cover throughout your entire period with us.</div>
+                        <div class="content">
+                          <p>Whiles with us, we give you an insurance cover throughout your entire period with us.</p>
+                          <img src="assets/starlife-logo.png" class="starlife" alt="">
+                          
+                        </div>
                       </div>
                       <hr>
                       <div class="container">
                         <div class="label">BANK ACCOUNT</div>
-                        <div class="content">We give you a fresh new bank account with our partnering bank and a free cash gift.</div>
+                        <div class="content">
+                          <p>We give you a fresh new bank account with our partnering bank and a free cash gift.</p>
+                          <img src="assets/best-point-logo.jpg" class="starlife" alt="">
+                        </div>
                       </div>
                       <hr>
                       <div class="container">
                         <div class="label">FREE GIFTS</div>
-                        <div class="content">Once a member of our foundation, we give you a free gift from any of our partners. These gifts ranges from laptops, mobile phones, shopping vouchers and many more.</div>
+                        <div class="content content1">
+                          <p>Once a member of our foundation, we give you a free gift from any of our partners. These gifts ranges from laptops, mobile phones, shopping vouchers and many more.</p>
+                          <div class="free-gift">
+                            <img src="assets/melcome.png" alt=""> 
+                            <img src="assets/get4.png" alt=""> 
+                            <img src="assets/tec.png" alt=""> 
+                          </div>
+                        </div>
                       </div>
                       <hr>
                       <div class="container">
@@ -252,67 +263,57 @@
               </div>
             </section>
 
-<!-- Slider main container -->
-<!-- <div class="swiper"> -->
-  <!-- Additional required wrapper -->
-  <!-- <div class="swiper-wrapper"> -->
-    <!-- Slides -->
-    <!-- <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
-  </div>
-  <div class="swiper-pagination"></div>
-</div> -->
 
-        <!-- gallery section  -->
-        <section class="gallery">
-          <div class="gallery__content">
-            <h1 class="gallery__title">Our Gallery</h1>
-            <div class="swiper swiper1">
-              <div class="swiper-wrapper gallery__images">
-                <figure class="swiper-slide gallery__item gallery__item--1">
-                        <img src="assets/img-onee.jpg" class="gallery__img" alt="Image 1">
-                      </figure>
-                      <figure class="swiper-slide gallery__item gallery__item--2">
-                        <img src="assets/img-twoo.jpg" class="gallery__img" alt="Image 2">
-                      </figure>
-                      <figure class="swiper-slide gallery__item gallery__item--3">
-                        <img src="assets/img-threee.jpg" class="gallery__img" alt="Image 3">
-                      </figure>
-                      <figure class="swiper-slide gallery__item gallery__item--4">
-                        <img src="assets/img-seven.jpeg" class="gallery__img" alt="Image 4">
-                      </figure>
-                      <figure class="swiper-slide gallery__item gallery__item--5">
-                        <img src="assets/img-eight.png" class="gallery__img" alt="Image 5">
-                      </figure>
-                      <figure class="swiper-slide gallery__item gallery__item--6">
-                        <img src="assets/img-sixx.jpeg" class="gallery__img" alt="Image 6">
-                      </figure>
-                      <figure class="swiper-slide gallery__item gallery__item--7">
-                        <img src="assets/img-five.jpeg" class="gallery__img" alt="Image 7">
-                      </figure>
-                      <figure class="swiper-slide gallery__item gallery__item--8">
-                        <img src="assets/img-four.jpeg" class="gallery__img" alt="Image 8">
-                      </figure>
-                      <figure class="swiper-slide gallery__item gallery__item--9">
-                        <img src="assets/img-nine.jpeg" class="gallery__img" alt="Image 9">
-                      </figure>
-                      <figure class="swiper-slide gallery__item gallery__item--10">
-                        <img src="assets/img-ten.jpeg" class="gallery__img" alt="Image 10">
-                      </figure>
-                      <figure class="swiper-slide gallery__item gallery__item--11">
-                        <img src="assets/img-eleven.jpeg" class="gallery__img" alt="Image 11">
-                      </figure>
-                      <figure class="swiper-slide gallery__item gallery__item--12">
-                        <img src="assets/img-twelve.jpeg" class="gallery__img" alt="Image 12">
-                      </figure>
-                    </div>
-                  </div>
+
+    <!-- gallery section  -->
+    <section class="gallery">
+      <div class="gallery__content">
+        <h1 class="gallery__title">Our Gallery</h1>
+        <div class="swiper swiper1">
+          <div class="swiper-wrapper gallery__images">
+            <figure class="swiper-slide gallery__item gallery__item--1">
+              <img src="assets/img-onee.jpg" class="gallery__img" alt="Image 1">
+            </figure>
+            <figure class="swiper-slide gallery__item gallery__item--2">
+              <img src="assets/img-twoo.jpg" class="gallery__img" alt="Image 2">
+            </figure>
+            <figure class="swiper-slide gallery__item gallery__item--3">
+              <img src="assets/img-threee.jpg" class="gallery__img" alt="Image 3">
+            </figure>
+            <figure class="swiper-slide gallery__item gallery__item--4">
+              <img src="assets/img-seven.jpeg" class="gallery__img" alt="Image 4">
+            </figure>
+            <figure class="swiper-slide gallery__item gallery__item--5">
+              <img src="assets/img-eight.png" class="gallery__img" alt="Image 5">
+            </figure>
+            <figure class="swiper-slide gallery__item gallery__item--6">
+              <img src="assets/img-sixx.jpeg" class="gallery__img" alt="Image 6">
+            </figure>
+            <figure class="swiper-slide gallery__item gallery__item--7">
+              <img src="assets/img-five.jpeg" class="gallery__img" alt="Image 7">
+            </figure>
+            <figure class="swiper-slide gallery__item gallery__item--8">
+              <img src="assets/img-four.jpeg" class="gallery__img" alt="Image 8">
+            </figure>
+            <figure class="swiper-slide gallery__item gallery__item--9">
+              <img src="assets/img-nine.jpeg" class="gallery__img" alt="Image 9">
+            </figure>
+            <figure class="swiper-slide gallery__item gallery__item--10">
+              <img src="assets/img-ten.jpeg" class="gallery__img" alt="Image 10">
+            </figure>
+            <figure class="swiper-slide gallery__item gallery__item--11">
+              <img src="assets/img-eleven.jpeg" class="gallery__img" alt="Image 11">
+            </figure>
+            <figure class="swiper-slide gallery__item gallery__item--12">
+              <img src="assets/img-twelve.jpeg" class="gallery__img" alt="Image 12">
+            </figure>
                 </div>
-                <div class="swiper-button-next1"></div>
-                <div class="swiper-button-prev1"></div>
-                <div class="swiper-pagination1"></div>
-        </section>
+              </div>
+            </div>
+            <div class="swiper-button-next1"></div>
+            <div class="swiper-button-prev1"></div>
+            <div class="swiper-pagination1"></div>
+    </section>
     </main>
     
     <!-- footer  -->
@@ -360,9 +361,12 @@
                         <p class="text">Monday to Saturday 8:00AM to 5:00PM</p>
                     </div>
                 </div>
+                <div class="disability">
+                <img src="assets/dis.png" class="disability" alt="">
+              </div>
+              </div>
             </div>
-        </div>
-        <div class="footer__bottom">
+            <div class="footer__bottom">
             <div class="footer__bottom-content">
                 <img src="assets/favicon2.png" alt="" class="logo">
                 <nav class="footerNav">

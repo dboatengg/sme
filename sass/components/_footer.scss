@@ -3,7 +3,7 @@
 .footer__right{display: flex;flex-direction: column;gap: 20px;}
 .footer__right .title {font-size: 14px;opacity: 0.8;}
 .footer__right .text {font-size: 22px;}
-.footer__top-content {display:grid;grid-template-columns: repeat(2, 1fr);gap:19.3rem;max-width: 1200px;margin: 0 auto;padding: 5rem 0;width: 90%;}
+.footer__top-content {display:grid;grid-template-columns: repeat(2, 1fr);gap:10px 19.3rem;max-width: 1200px;margin: 0 auto;padding: 5rem 0;width: 90%;}
 .footer__bottom {background-color: #1e1b1b;color: white;}
 .footer__bottom-content{max-width: 1200px;margin: 0 auto;display: flex;justify-content: space-between;align-items: center;padding: 3rem 0;width: 90%;}
 .footer__bottom img {width: 50px;}
@@ -35,3 +35,5 @@
 {
     .footer__right .text {font-size: 18px;word-wrap: break-word;}
 }
+
+

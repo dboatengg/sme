@@ -296,6 +296,7 @@
   margin: 0 auto;
   color: black;
   padding: 45px 45px;
+  width: 90%;
   background: rgba(255, 255, 255, 0.8);
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
           box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -354,7 +355,7 @@
 
 /* Unhides the content part when active. Sets the height */
 .accordion .container.active .content {
-  height: 70px;
+  height: 130px;
 }
 
 /* Changes from plus sign to negative sign once active */
@@ -370,6 +371,9 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .accordion .container.active .content {
+    height: 80px;
+  }
   .join {
     padding: 5rem 3rem;
   }
@@ -396,6 +400,20 @@
     font-size: 12px;
     text-align: left;
   }
+}
+
+.accordion .content img {
+  width: 200px;
+  margin-top: 10px;
+}
+
+.free-gift {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /***colors***/
@@ -556,7 +574,7 @@
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  gap: 19.3rem;
+  gap: 10px 19.3rem;
   max-width: 1200px;
   margin: 0 auto;
   padding: 5rem 0;
@@ -795,7 +813,7 @@
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  gap: 19.3rem;
+  gap: 10px 19.3rem;
   max-width: 1200px;
   margin: 0 auto;
   padding: 5rem 0;
