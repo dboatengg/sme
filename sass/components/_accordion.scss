@@ -82,7 +82,7 @@ h1 {
 }
 .join-title {font-weight: bold;font-size: 2.5rem;}
 .accordion-item-header {
-  padding: 1.5rem 3rem 1.5rem 1rem;
+  padding: 1.2rem 3rem 1.2rem 1rem;
   min-height: 3.5rem;
   line-height: 1.6;
   font-weight: bold;
@@ -92,11 +92,16 @@ h1 {
   cursor: pointer;
   font-size: 2.2rem;
 }
+
+@media only screen and (max-width:768px) {
+  .accordion-item-header {font-size: 2rem;}
+}
 .accordion-item-header::after {
   content: "\002B";
   font-size: 2rem;
   position: absolute;
   right: 1rem;
+  font-size: 2rem;
 }
 .accordion-item-header.active::after {
   content: "\2212";
