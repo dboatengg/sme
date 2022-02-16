@@ -13,7 +13,7 @@
 
 
 /****css reset*****/
-* {margin: 0;padding: 0;font-size: 1em;font-family: inherit;box-sizing: border-box;}
+* {margin: 0;padding: 0;font-size: 1em;font-family: inherit;box-sizing: border-box;-webkit-appearance: initial;}
 html {font-size: 62.5%;scroll-behavior: smooth;-webkit-overflow-scrolling: touch;}
 html:focus-within {scroll-behavior: smooth;}
 body {box-sizing: border-box;font-size: 1.8rem;font-family: 'Inter', sans-serif;}

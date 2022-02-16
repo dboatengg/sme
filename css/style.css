@@ -65,7 +65,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 4rem;
+  gap: 3rem;
 }
 
 .header__heading {
@@ -1283,6 +1283,7 @@ h1 {
   font-family: inherit;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-appearance: initial;
 }
 
 html {
