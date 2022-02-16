@@ -1,4 +1,5 @@
 /***colors***/
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 .header {
   background-color: #116d85;
   background-image: url("/assets/elegant.png");
@@ -285,135 +286,106 @@
   }
 }
 
+/* Positions the plus sign 5px from the right. Centers it using the transform property. */
+/* Hides the content (height: 0), decreases font size, justifies text and adds transition */
+/* Adds a horizontal line between the contents */
+/* Unhides the content part when active. Sets the height */
+/* Changes from plus sign to negative sign once active */
 .join {
-  background-color: #14213D;
-  padding: 5rem 5rem;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #34495e;
+  color: #fff;
+  padding: 8rem 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2.5rem;
 }
 
 .accordion {
-  max-width: 800px;
-  border-radius: 0.5rem;
-  margin: 0 auto;
-  color: black;
-  padding: 45px 45px;
   width: 90%;
-  background: rgba(255, 255, 255, 0.8);
-  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.accordion .container {
-  position: relative;
-  margin: 10px 10px;
+.accordion-item {
+  background-color: #fff;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
 }
 
-.accordion .label {
+.join-title {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.accordion-item-header {
+  padding: 1.5rem 3rem 1.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.6;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
-  padding: 7px 0;
-  font-size: 2rem;
-  color: black;
   cursor: pointer;
-  font-weight: 600;
+  font-size: 2.2rem;
 }
 
-/* Positions the plus sign 5px from the right. Centers it using the transform property. */
-.accordion .label::before {
-  content: '+';
-  color: #6F1DF4;
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
   position: absolute;
-  top: 50%;
-  right: -5px;
-  font-size: 30px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  right: 1rem;
 }
 
-/* Hides the content (height: 0), decreases font size, justifies text and adds transition */
-.accordion .content {
-  position: relative;
-  height: 0;
-  margin-left: 5px;
-  font-size: 16px;
-  text-align: justify;
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+
+.accordion-item-body {
+  max-height: 0;
   overflow: hidden;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
 }
 
-/* Adds a horizontal line between the contents */
-.accordion hr {
-  width: 100%;
-  margin-left: 0;
-  border: none;
-  height: 2px;
-  background-color: #e9e9e9;
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5;
+  border-top: 1px solid;
+  -o-border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#34495e), to(transparent)) 1;
+     border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
 }
 
-/* Unhides the content part when active. Sets the height */
-.accordion .container.active .content {
-  height: 130px;
-}
-
-/* Changes from plus sign to negative sign once active */
-.accordion .container.active .label::before {
-  content: '-';
-  font-size: 30px;
-}
-
-.accordion__title {
-  text-align: center;
-  font-size: 4rem;
-  margin-bottom: 3rem;
-}
-
-@media only screen and (max-width: 800px) {
-  .accordion .container.active .content {
-    height: 80px;
-  }
-  .join {
-    padding: 5rem 3rem;
-  }
-  .accordion {
-    padding: 4.5rem 2rem;
-  }
-  .accordion__title {
-    font-size: 3rem;
-  }
-  .accordion .label {
-    font-size: 1.6rem;
-  }
-  .accordion .content {
+@media (max-width: 767px) {
+  html {
     font-size: 14px;
-    text-align: left;
-  }
-  .accordion .container.active .content {
-    height: 150px;
   }
 }
 
-@media only screen and (max-width: 300px) {
-  .accordion .content {
-    font-size: 12px;
-    text-align: left;
-  }
-}
-
-.accordion .content img {
+.accordion-item-body img {
   width: 200px;
   margin-top: 10px;
 }
 
-.free-gift {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.free-gift img {
+  width: 90px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 /***colors***/
