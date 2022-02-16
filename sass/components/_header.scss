@@ -5,7 +5,7 @@
 .nav-menu__link {color: $white;margin-left: 20px;transition: 0.1s;padding: 0.5rem;font-size: 1.6rem;}
 .hamburger {display: none;padding: 2rem;}
 .bar {display: block;width: 30px;height: 4px;margin: 5px auto;-webkit-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;background-color: $white;}
-.hero__content {display: flex;max-width: 700px;margin: 0 auto;flex-direction: column;gap: 3rem;}
+.hero__content {display: flex;max-width: 700px;margin: 0 auto;flex-direction: column;gap: 3rem;line-height: 28px;}
 .header__heading {font-size: 3rem;}
 .logo {width: 100px;}
 .header__subtitle {font-size: 4.5rem;}

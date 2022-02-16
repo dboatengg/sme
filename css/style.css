@@ -66,6 +66,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 3rem;
+  line-height: 28px;
 }
 
 .header__heading {
@@ -219,6 +220,7 @@
 /***colors***/
 .about {
   padding: 10rem 0;
+  line-height: 28px;
 }
 
 .about__content {
@@ -611,6 +613,7 @@ h1 {
 
 .footer__title {
   font-size: 48px;
+  text-align: left;
 }
 
 .footer a, .footer i {
@@ -636,6 +639,7 @@ h1 {
   cursor: pointer;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  line-height: 28px;
 }
 
 /***media query****/
@@ -850,6 +854,7 @@ h1 {
 
 .footer__title {
   font-size: 48px;
+  text-align: left;
 }
 
 .footer a, .footer i {
@@ -875,6 +880,7 @@ h1 {
   cursor: pointer;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  line-height: 28px;
 }
 
 /***media query****/

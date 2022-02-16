@@ -11,11 +11,11 @@
 .footerNavMenu li{list-style: none;}
 .footerNavMenu a:hover{color: #6f1df4;}
 .footerNavMenu a{font-size: 14px;transition: 0.3s ease-in-out;}
-.footer__title{font-size: 48px;}
+.footer__title{font-size: 48px;text-align: left;}
 .footer a, .footer i {color: white;}
 .footer i{font-size: 30px;transition: 0.3s ease-in-out;}
 .footer i:hover{color: #6F1DF4;}
-.footer__icons {margin-top: 2rem;display: flex;gap: 2rem;cursor: pointer;transition: 0.3s ease-in-out;}
+.footer__icons {margin-top: 2rem;display: flex;gap: 2rem;cursor: pointer;transition: 0.3s ease-in-out;line-height: 28px;}
 
 /***media query****/ 
 @media only screen and (max-width: 1024px)
