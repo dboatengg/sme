@@ -18,7 +18,7 @@
 .box .info .stars{margin-top: 2px;}
 .box .info .stars i{color: #17a2b8;}
 .box .content .image{height: 75px;width: 75px;padding: 3px;background: #6F1DF4;border-radius: 50%;}
-.content .image img{height: 100%;width: 100%;object-fit: cover;border-radius: 50%;border: 2px solid #fff;}
+.content .image img{height: 100%;width: 100%;object-fit: cover;border-radius: 50vh;border: 2px solid #fff;object-fit: cover;}
 .box:hover .content .image img{border-color: #fff;}
 .box p {line-height: 1.5;font-size: 2.4rem;}
 

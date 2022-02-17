@@ -1,8 +1,8 @@
 .footer__top {background-color: #1e1b1b;opacity: 0.98;color: white;}
 .footer__top-content{max-width: 1200px;}
-.footer__right{display: flex;flex-direction: column;gap: 20px;}
+.footer__right{display: flex;flex-direction: column;gap: 2rem;}
 .footer__right .title {font-size: 14px;opacity: 0.8;}
-.footer__right .text {font-size: 22px;}
+.footer__right .text {font-size: 2.2rem}
 .footer__top-content {display:grid;grid-template-columns: repeat(2, 1fr);gap:10px 19.3rem;max-width: 1200px;margin: 0 auto;padding: 5rem 0;width: 90%;}
 .footer__bottom {background-color: #1e1b1b;color: white;}
 .footer__bottom-content{max-width: 1200px;margin: 0 auto;display: flex;justify-content: space-between;align-items: center;padding: 3rem 0;width: 90%;}
@@ -15,25 +15,29 @@
 .footer a, .footer i {color: white;}
 .footer i{font-size: 30px;transition: 0.3s ease-in-out;}
 .footer i:hover{color: #6F1DF4;}
-.footer__icons {margin-top: 2rem;display: flex;gap: 2rem;cursor: pointer;transition: 0.3s ease-in-out;line-height: 28px;}
+.footer__icons {margin-top: 2rem;display: flex;gap: 2rem;cursor: pointer;transition: 0.3s ease-in-out;}
+.dis {position: relative;display: flex;justify-content: center;align-items: left;width: 60%;margin: 0 auto;align-self:left;}
 
 /***media query****/ 
 @media only screen and (max-width: 1024px)
 {
-    .footer__top-content{grid-template-columns: 1fr;gap: 40px;}
+    .footer__top-content{grid-template-columns: 1fr;gap: 4rem;}
     .footer__title {max-width: 60%;}
 }
 
-
 @media only screen and (max-width: 860px)
 {
-    .footer__bottom-content {flex-direction: column;word-wrap: break-word;gap: 30px;}
+    .dis {position: relative;display: flex;justify-content: center;align-items: center;width: 60%;margin: 0 auto;}
+    .footer__bottom-content {flex-direction: column;word-wrap: break-word;gap: 3rem;}
     .footerNavMenu{flex-direction: column;align-items: center;}
     .footer__title {max-width: 90%;font-size: 3rem;}
 }
+
 @media only screen and (max-width: 440px)
 {
-    .footer__right .text {font-size: 18px;word-wrap: break-word;}
+    .footer__right .text {font-size: 1.6rem;word-wrap: break-word;}
 }
 
-
+@media only screen and (max-width:275px){
+    .footer__right .text {font-size: 1.4rem;}
+}

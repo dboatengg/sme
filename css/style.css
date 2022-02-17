@@ -66,7 +66,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 3rem;
-  line-height: 28px;
 }
 
 .header__heading {
@@ -475,8 +474,9 @@ h1 {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 50%;
+  border-radius: 50vh;
   border: 2px solid #fff;
+  object-fit: cover;
 }
 
 .box:hover .content .image img {
@@ -538,7 +538,7 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
+  gap: 2rem;
 }
 
 .footer__right .title {
@@ -547,7 +547,7 @@ h1 {
 }
 
 .footer__right .text {
-  font-size: 22px;
+  font-size: 2.2rem;
 }
 
 .footer__top-content {
@@ -639,7 +639,23 @@ h1 {
   cursor: pointer;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  line-height: 28px;
+}
+
+.dis {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  width: 60%;
+  margin: 0 auto;
+  -ms-flex-item-align: left;
+      align-self: left;
 }
 
 /***media query****/
@@ -647,7 +663,7 @@ h1 {
   .footer__top-content {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 4rem;
   }
   .footer__title {
     max-width: 60%;
@@ -655,13 +671,27 @@ h1 {
 }
 
 @media only screen and (max-width: 860px) {
+  .dis {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 60%;
+    margin: 0 auto;
+  }
   .footer__bottom-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     word-wrap: break-word;
-    gap: 30px;
+    gap: 3rem;
   }
   .footerNavMenu {
     -webkit-box-orient: vertical;
@@ -680,8 +710,14 @@ h1 {
 
 @media only screen and (max-width: 440px) {
   .footer__right .text {
-    font-size: 18px;
+    font-size: 1.6rem;
     word-wrap: break-word;
+  }
+}
+
+@media only screen and (max-width: 275px) {
+  .footer__right .text {
+    font-size: 1.4rem;
   }
 }
 
@@ -705,11 +741,7 @@ h1 {
 }
 
 .gallery__img {
-  max-width: 100%;
   border-radius: 1rem;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .swiper1 {
@@ -729,13 +761,21 @@ h1 {
 
 /***********gallery page*********/
 .gallery__container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(400px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  justify-items: center;
-  gap: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
   line-height: 0;
+  position: relative;
+  z-index: -999;
 }
 
 .gallery-main .content {
@@ -761,6 +801,36 @@ h1 {
   margin: 8rem 0;
 }
 
+.gallery-main .content img {
+  max-width: 45%;
+}
+
+.gale {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.gale h1 {
+  font-size: 4rem;
+}
+
+.gale a {
+  display: block;
+}
+
 .footer__top {
   background-color: #1e1b1b;
   opacity: 0.98;
@@ -779,7 +849,7 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
+  gap: 2rem;
 }
 
 .footer__right .title {
@@ -788,7 +858,7 @@ h1 {
 }
 
 .footer__right .text {
-  font-size: 22px;
+  font-size: 2.2rem;
 }
 
 .footer__top-content {
@@ -880,7 +950,23 @@ h1 {
   cursor: pointer;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  line-height: 28px;
+}
+
+.dis {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  width: 60%;
+  margin: 0 auto;
+  -ms-flex-item-align: left;
+      align-self: left;
 }
 
 /***media query****/
@@ -888,7 +974,7 @@ h1 {
   .footer__top-content {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 4rem;
   }
   .footer__title {
     max-width: 60%;
@@ -896,13 +982,27 @@ h1 {
 }
 
 @media only screen and (max-width: 860px) {
+  .dis {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 60%;
+    margin: 0 auto;
+  }
   .footer__bottom-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     word-wrap: break-word;
-    gap: 30px;
+    gap: 3rem;
   }
   .footerNavMenu {
     -webkit-box-orient: vertical;
@@ -921,8 +1021,14 @@ h1 {
 
 @media only screen and (max-width: 440px) {
   .footer__right .text {
-    font-size: 18px;
+    font-size: 1.6rem;
     word-wrap: break-word;
+  }
+}
+
+@media only screen and (max-width: 275px) {
+  .footer__right .text {
+    font-size: 1.4rem;
   }
 }
 
@@ -952,6 +1058,7 @@ h1 {
   font-size: 3rem;
   margin-bottom: 2rem;
   font-weight: 700;
+  text-align: left;
 }
 
 .course-main a {
@@ -1317,6 +1424,8 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .btn {
