@@ -16,8 +16,8 @@ for (i=0; i<accordion.length; i++) {
 hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
+    hamburger.classList.add("active");
+    navMenu.classList.add("active");
     document.body.classList.toggle('lock-scroll')
 }
 
@@ -29,7 +29,6 @@ navLink.forEach((n) => n.addEventListener("click", removeOverflow));
 function removeOverflow() {
   document.body.classList.remove('lock-scroll')
 }
-
 
 
 navLink.forEach(n => n.addEventListener("click", closeMenu));

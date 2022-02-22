@@ -312,7 +312,13 @@ h1 {
 }
 
 .accordion-item {
-  background-color: #fff;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   color: #111;
   margin: 1rem 0;
   border-radius: 0.5rem;
@@ -642,20 +648,36 @@ h1 {
 }
 
 .dis {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
   width: 60%;
   margin: 0 auto;
-  -ms-flex-item-align: left;
-      align-self: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.disability {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.reg {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.reg span {
+  font-weight: bold;
 }
 
 /***media query****/
@@ -953,20 +975,36 @@ h1 {
 }
 
 .dis {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
   width: 60%;
   margin: 0 auto;
-  -ms-flex-item-align: left;
-      align-self: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.disability {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.reg {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.reg span {
+  font-weight: bold;
 }
 
 /***media query****/
