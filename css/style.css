@@ -152,19 +152,22 @@
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 18rem;
+    top: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: #14213D;
-    width: 100%;
-    text-align: center;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    padding: 3rem 0;
-    -webkit-box-shadow: 2px 10px 27px rgba(0, 0, 0, 0.05);
-            box-shadow: 2px 10px 27px rgba(0, 0, 0, 0.05);
+    background-color: #000;
+    opacity: 0.98;
+    width: 70%;
+    height: 100vh;
+    text-align: left;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    padding: 5rem 3rem 0 3rem;
+    -webkit-box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.05);
+            box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.05);
+    z-index: 9999;
   }
   .nav-menu__link {
     margin-left: 0;
@@ -622,7 +625,8 @@ h1 {
   text-align: left;
 }
 
-.footer a, .footer i {
+.footer a,
+.footer i {
   color: white;
 }
 
@@ -657,12 +661,16 @@ h1 {
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
-  width: 60%;
   margin: 0 auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.dis p {
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 .disability {
@@ -672,12 +680,8 @@ h1 {
 
 .reg {
   margin-top: 20px;
-  font-size: 1.8rem;
-  font-weight: 600;
-}
-
-.reg span {
-  font-weight: bold;
+  font-size: 1rem;
+  width: 100%;
 }
 
 /***media query****/
@@ -704,7 +708,9 @@ h1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 60%;
+  }
+  .dis img {
+    width: 70%;
     margin: 0 auto;
   }
   .footer__bottom-content {
@@ -949,7 +955,8 @@ h1 {
   text-align: left;
 }
 
-.footer a, .footer i {
+.footer a,
+.footer i {
   color: white;
 }
 
@@ -984,12 +991,16 @@ h1 {
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
-  width: 60%;
   margin: 0 auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.dis p {
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 .disability {
@@ -999,12 +1010,8 @@ h1 {
 
 .reg {
   margin-top: 20px;
-  font-size: 1.8rem;
-  font-weight: 600;
-}
-
-.reg span {
-  font-weight: bold;
+  font-size: 1rem;
+  width: 100%;
 }
 
 /***media query****/
@@ -1031,7 +1038,9 @@ h1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 60%;
+  }
+  .dis img {
+    width: 70%;
     margin: 0 auto;
   }
   .footer__bottom-content {
