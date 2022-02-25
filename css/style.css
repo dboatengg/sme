@@ -157,9 +157,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: #000;
-    opacity: 0.98;
-    width: 70%;
+    background-color: #242423;
+    opacity: 0.99;
+    width: 80%;
     height: 100vh;
     text-align: left;
     -webkit-transition: 0.3s ease-in-out;
@@ -1448,7 +1448,6 @@ h1 {
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -1516,6 +1515,11 @@ img {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+/*****fixed position on body*****/
+.fixed-position {
+  position: fixed;
 }
 
 /********loader*********/
@@ -1655,6 +1659,7 @@ img {
 
 /****back to top******/
 .back-to-top {
+  display: none;
   position: fixed;
   right: 2rem;
   bottom: 2rem;
@@ -1672,12 +1677,8 @@ img {
   transition: opacity 0.3s ease-in-out;
 }
 
-.back-to-top:hover {
-  opacity: 0.8;
-}
-
-.hidden {
-  opacity: 0;
+.back-to-top.activee {
+  display: block;
 }
 
 /****date and time*****/
@@ -1732,7 +1733,8 @@ img {
   margin: 0 auto;
 }
 
-.mark, .proceed__title {
+.mark,
+.proceed__title {
   max-width: 600px;
   margin: 0 auto;
   width: 60%;
