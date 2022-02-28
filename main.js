@@ -13,16 +13,17 @@ for (i = 0; i < accordion.length; i++) {
 }
 
 /****nav bar*****/
-hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
     document.body.classList.toggle('lock-scroll')
 }
-
-
 navLink.forEach((n) => n.addEventListener("click", removeOverflow));
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+hamburger.addEventListener("click", mobileMenu);
+
+
 
 
 /*****remove lock scroll******/
@@ -30,12 +31,13 @@ function removeOverflow() {
     document.body.classList.remove('lock-scroll')
 }
 
+
+/****lock body when nav-menu is active*****/
 function lockScroll() {
     document.body.classList.add('lock-scroll');
 }
 
-navLink.forEach(n => n.addEventListener("click", closeMenu));
-
+/******close navmenu ******/
 function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
@@ -56,11 +58,19 @@ $(document).ready(function() {
 
 
 
+
+
+
+
+
+
+
+
 /***Slow down back-to-top speed******/
 
 // Bind your button click, scroll direction and effect speed
 backToTopButton.onclick = function() {
-    scrollTo(0, 800); // it will take 0.8 seconds to reach to top.
+    scrollTo(0, 500); // it will take 0.8 seconds to reach to top.
 
 }
 
@@ -103,6 +113,14 @@ function easeOutCuaic(t) {
 }
 
 
+
+
+
+
+
+
+
+
 /*****fucntionality for modal***********/
 const close = document.querySelector('.close');
 const modalContainer = document.querySelector('.modal');
@@ -115,6 +133,17 @@ setTimeout(() => {
 close.addEventListener('click', () => {
     modalContainer.classList.remove('show');
 })
+
+
+
+
+
+
+
+
+
+
+
 
 /****display today's date****/
 function display_ct5() {
@@ -141,10 +170,6 @@ function display_ct5() {
     if (TwentyFourHour < 12) {
         mid = 'AM';
     }
-    // else {mid = 'PM'}
-    // document.getElementById('currentTime').innerHTML =     hour+':'+minTime+':'+secTime +' '+mid ;
-
-    // setTimeout(clock, 1000);}
 
     const monthList = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
     const month = today.getMonth();
@@ -163,6 +188,14 @@ function display_c5() {
 }
 
 display_c5();
+
+
+
+
+
+
+
+
 
 
 
@@ -217,6 +250,14 @@ const swiper1 = new Swiper('.swiper1', {
 });
 
 
+
+
+
+
+
+
+
+
 //hide loader when window loads and add 2 seconds to loading time
 window.addEventListener('load', () => setTimeout(() => {
     document.querySelector('.loader-content').classList.add('hide');
@@ -225,13 +266,16 @@ window.addEventListener('load', () => setTimeout(() => {
 
 
 
+
+
+
+/******functionality for accordion*******/
 const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
 
 accordionItemHeaders.forEach(accordionItemHeader => {
     accordionItemHeader.addEventListener("click", event => {
 
         // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
-
         const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
         if (currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader !== accordionItemHeader) {
             currentlyActiveAccordionItemHeader.classList.toggle("active");

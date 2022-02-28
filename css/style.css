@@ -205,12 +205,6 @@
     -webkit-transform: translateY(-8px) rotate(-45deg);
             transform: translateY(-8px) rotate(-45deg);
   }
-  .lock-scroll {
-    overflow: hidden;
-  }
-  body.lock-scroll {
-    overflow: hidden;
-  }
 }
 
 @media only screen and (min-width: 901px) {
@@ -1496,9 +1490,13 @@ img {
   overflow-y: scroll;
 }
 
+.body.lock-scroll {
+  overflow: hidden;
+}
+
 /*****scroll bar*****/
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 
 /* Track */
@@ -1509,7 +1507,7 @@ img {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 /* Handle on hover */

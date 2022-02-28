@@ -68,11 +68,15 @@ img {
     overflow-y: scroll;
 }
 
+.body.lock-scroll {
+    overflow: hidden;
+}
+
 
 /*****scroll bar*****/
 
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 10px;
 }
 
 
@@ -87,7 +91,7 @@ img {
 
  ::-webkit-scrollbar-thumb {
     background: #888;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 
